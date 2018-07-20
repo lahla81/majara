@@ -1,0 +1,210 @@
+@font-face {
+  font-family: NotoKufiArabic-Regular;
+  src: url(../webfonts/NotoKufiArabic-Regular.ttf); }
+
+@font-face {
+  font-family: NotoKufiArabic-Bold;
+  src: url(../webfonts/NotoKufiArabic-Bold.ttf); }
+
+body {
+  font-family: 'NotoKufiArabic-Bold' ,  'Times New Roman', Times, serif; }
+
+.container-fluid {
+  padding: 0; }
+
+.row {
+  margin-left: 0;
+  margin-right: 0; }
+
+.container {
+  padding-left: 0;
+  padding-right: 0; }
+
+nav#navBar {
+  padding: 30px 0;
+  transition: all 0.5s ease-in; }
+  nav#navBar .navagation {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px; }
+    @media (min-width: 992px) and (max-width: 1270px) {
+      nav#navBar .navagation {
+        padding-left: 40px;
+        padding-right: 40px; } }
+    @media (max-width: 992px) {
+      nav#navBar .navagation {
+        display: block; }
+        nav#navBar .navagation .navbar-brand {
+          float: left; }
+        nav#navBar .navagation #navbarTogglerDemo01 {
+          position: absolute;
+          background: #3e66e6; } }
+    nav#navBar .navagation button {
+      margin-top: 20px;
+      margin-right: 30px; }
+      nav#navBar .navagation button i.fa {
+        color: white;
+        padding: 10px;
+        border: 1px solid white; }
+      nav#navBar .navagation button:hover, nav#navBar .navagation button:focus, nav#navBar .navagation button:active {
+        outline: none; }
+        nav#navBar .navagation button:hover i.fa, nav#navBar .navagation button:focus i.fa, nav#navBar .navagation button:active i.fa {
+          outline: none;
+          color: #3e66e6;
+          background-color: white;
+          border: 1px solid #3e66e6; }
+      @media (max-width: 380px) {
+        nav#navBar .navagation button {
+          margin-right: 10px; } }
+  nav#navBar li.active a {
+    background-color: #1bc5ff;
+    color: white;
+    border-radius: 30px; }
+  nav#navBar a.nav-link {
+    color: white;
+    padding: 15px 20px;
+    margin: 0 5px;
+    font-size: 20px; }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      nav#navBar a.nav-link {
+        margin: 0;
+        padding: 15px 10px; } }
+  nav#navBar .about-link {
+    position: relative; }
+    nav#navBar .about-link:before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      background-color: white;
+      bottom: 0px; }
+  nav#navBar a.download-link {
+    margin-right: 50px; }
+  nav#navBar a.navbar-brand {
+    margin-right: 30px; }
+    nav#navBar a.navbar-brand img {
+      width: 80%; }
+    @media (max-width: 992px) {
+      nav#navBar a.navbar-brand {
+        margin-left: 30px;
+        margin-right: 0; } }
+    @media (max-width: 380px) {
+      nav#navBar a.navbar-brand {
+        margin-left: 10px; } }
+  nav#navBar .navbar-collapse {
+    flex-grow: 0; }
+  nav#navBar ul.navbar-nav li a:hover, nav#navBar ul.navbar-nav li a:focus, nav#navBar ul.navbar-nav li a:active {
+    background-color: #1bc5ff;
+    color: white;
+    border-radius: 30px; }
+  nav#navBar a.nav-link.scroll.active {
+    background-color: #182153;
+    color: white; }
+
+#navBar.noTransparrent {
+  background: #3e66e6;
+  padding: 5px 0; }
+
+#header {
+  background-image: url(../images/Path11.png), url(../images/bg.png), url(../images/bg1.png);
+  background-position: 2% 90%, center center, 240px -30px;
+  background-size: 40%, cover, cover;
+  background-repeat: no-repeat, no-repeat,no-repeat;
+  min-height: 100%; }
+  #header .overlay {
+    padding-top: 180px;
+    min-height: 100%; }
+    #header .overlay .header .mobile-slider img {
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex; }
+    #header .overlay .header .page-head-text h1 {
+      font-size: 30px;
+      color: white;
+      margin-bottom: 30px;
+      margin-top: 50px; }
+      @media (max-width: 1200px) {
+        #header .overlay .header .page-head-text h1 {
+          margin-bottom: 10px;
+          margin-top: 20px; } }
+    #header .overlay .header .page-head-text h2 {
+      font-family: NotoKufiArabic-Regular;
+      font-size: 40px;
+      color: white;
+      margin-bottom: 20px; }
+      @media (max-width: 1200px) {
+        #header .overlay .header .page-head-text h2 {
+          margin-bottom: 10px; } }
+    #header .overlay .header .page-head-text h4 {
+      font-family: NotoKufiArabic-Regular;
+      font-size: 30px;
+      color: white;
+      margin-top: 50px;
+      margin-bottom: 30px; }
+      @media (max-width: 1200px) {
+        #header .overlay .header .page-head-text h4 {
+          margin-bottom: 10px;
+          margin-top: 20px; } }
+    #header .overlay .header .page-head-text .play-store {
+      position: relative;
+      margin-left: 25px;
+      margin-bottom: 80px; }
+      @media (max-width: 1200px) {
+        #header .overlay .header .page-head-text .play-store {
+          margin-left: 10px; } }
+    #header .overlay .header .page-head-text .on-button {
+      position: relative; }
+      #header .overlay .header .page-head-text .on-button .social {
+        position: absolute;
+        left: -100px;
+        bottom: 0px; }
+        #header .overlay .header .page-head-text .on-button .social ul {
+          padding: 0;
+          margin: 0; }
+          #header .overlay .header .page-head-text .on-button .social ul li {
+            margin-right: 70px; }
+            #header .overlay .header .page-head-text .on-button .social ul li a {
+              color: white; }
+              #header .overlay .header .page-head-text .on-button .social ul li a i.fab {
+                font-size: 35px; }
+              #header .overlay .header .page-head-text .on-button .social ul li a:hover, #header .overlay .header .page-head-text .on-button .social ul li a:active, #header .overlay .header .page-head-text .on-button .social ul li a:focus {
+                color: #aeb4d4; }
+        @media (max-width: 1400px) {
+          #header .overlay .header .page-head-text .on-button .social {
+            left: -10px; } }
+
+#about {
+  padding-top: 200px;
+  padding-bottom: 200px; }
+  #about .paragraph {
+    padding-top: 120px;
+    padding-left: 0;
+    padding-right: 0; }
+    @media (max-width: 1400px) and (min-width: 993px) {
+      #about .paragraph {
+        padding-top: 0px; } }
+    #about .paragraph p {
+      padding-top: 40px;
+      font-size: 35px;
+      font-family: NotoKufiArabic-Regular;
+      line-height: 51px; }
+  #about .photo img {
+    width: 70%; }
+
+#feature {
+  padding-top: 210px;
+  padding-bottom: 180px;
+  background: rgba(27, 197, 255, 0.05); }
+  #feature h1 {
+    color: #2574F2;
+    font-size: 40px;
+    margin-bottom: 20px; }
+  #feature h2 {
+    color: #141414;
+    font-family: NotoKufiArabic-Regular;
+    font-size: 40px; }
