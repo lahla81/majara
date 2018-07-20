@@ -256,7 +256,7 @@ nav#navBar {
       font-family: NotoKufiArabic-Regular;
       color: #41434F; }
   #gift .photo img {
-    width: 70%; }
+    width: 80%; }
 
 #fronts {
   padding-top: 135px;
@@ -269,28 +269,78 @@ nav#navBar {
   padding-bottom: 260px; }
   #download .Group3104 {
     margin-bottom: 60px; }
+    @media (max-width: 400px) {
+      #download .Group3104 {
+        width: 90%; } }
   #download h1 {
     font-size: 40px;
     color: #41434F;
     font-family: NotoKufiArabic-Regular;
     margin-bottom: 50px; }
   #download .play-store img {
-    margin-left: 25px;
-    margin-right: 25px; }
+    width: 100%; }
 
 #contact-us {
   padding-top: 120px;
   padding-bottom: 100px;
-  background-image: url(../images/MaskGroup21.png);
-  background-size: cover;
-  background-position: center center; }
+  background-image: url(../images/MaskGroup21@2x.png);
+  background-size: auto;
+  background-position: center center;
+  height: 950px; }
   #contact-us h1 {
     color: white;
     font-size: 40px;
     font-family: NotoKufiArabic-Regular;
     margin-bottom: 40px; }
-  #contact-us .social .fab {
+  #contact-us .social {
+    margin-bottom: 60px; }
+    #contact-us .social .fab {
+      font-size: 20px;
+      color: white;
+      margin-left: 25px;
+      margin-right: 25px; }
+  #contact-us .contact-us-form .col-10 {
+    padding: 0; }
+  #contact-us .contact-us-form .custom-form-group {
+    margin-bottom: 0;
+    height: 100px;
+    display: block; }
+  #contact-us .contact-us-form .custom-form-control, #contact-us .contact-us-form .custom-texterea-control {
+    border-radius: 0;
+    margin-bottom: 0;
+    color: #B2B2B2;
     font-size: 20px;
-    color: white;
-    margin-left: 25px;
-    margin-right: 25px; }
+    font-family: NotoKufiArabic-Regular; }
+  #contact-us .contact-us-form .custom-form-control {
+    height: 100%; }
+  #contact-us .contact-us-form .custom-texterea-control {
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding-top: 35px; }
+  #contact-us .contact-us-form #cname {
+    padding-left: 0; }
+  #contact-us .contact-us-form #cnumber {
+    padding-right: 0; }
+  #contact-us .contact-us-form .cname {
+    border-top-right-radius: 12px; }
+  #contact-us .contact-us-form .cnumber {
+    border-top-left-radius: 12px; }
+  #contact-us .contact-us-form button.submit {
+    background: #45C1F0;
+    font-size: 25px;
+    margin-top: 60px;
+    padding: 25px 80px;
+    border-radius: 50px;
+    color: white; }
+  @media (max-width: 767px) {
+    #contact-us .contact-us-form #cname {
+      padding-left: 5px; }
+    #contact-us .contact-us-form #cnumber {
+      padding-right: 5px; }
+    #contact-us .contact-us-form .cname {
+      border-top-right-radius: 12px;
+      border-top-left-radius: 12px; }
+    #contact-us .contact-us-form .cnumber {
+      border-radius: 0; }
+    #contact-us .contact-us-form .custom-form-group {
+      height: 70px; } }

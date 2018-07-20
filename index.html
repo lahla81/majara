@@ -52,7 +52,7 @@
                     <div class="row header justify-content-center">
                         <div class="col-lg-5">
                             <div class="mobile-slider">
-                                <img src="./images/Group 3018.png" alt="App photo">
+                                <img src="./images/Group3018.png" alt="App photo">
                             </div>
                         </div>
                         <div class="col-lg-5 text-right">
@@ -71,7 +71,7 @@
                                 </div>
                                 <div class="on-button">
                                     <a href="#">
-                                        <img src="./images/Group 20.png" alt="">
+                                        <img src="./images/Group20.png" alt="">
                                     </a>
                                     <div class="row social">
                                         <ul class="list-inline">
@@ -120,12 +120,12 @@
                     <div class="col-xl">
                         <div class="row">
                             <div class="col-lg col-md features">
-                                <img src="./images/Group 1395.png" alt="easy to use">
+                                <img src="./images/Group1395.png" alt="easy to use">
                                 <h4>واجهة مستخدم سهلة</h4>
                                 <p>يتميز تطبيق مجرة بواجهة مستخدم سهلة لتناسب جميع المستخدمين</p>
                             </div>
                             <div class="col-lg col-md features">
-                                <img src="./images/Group 1391.png" alt="easy to use">
+                                <img src="./images/Group1391.png" alt="easy to use">
                                 <h4>وسائل دفع موثوقة</h4>
                                 <p>يتيح تطبيق مجرة الدفع عن طريق الكريدت كارد أو الدفع عند الإستلام</p>
                             </div>
@@ -134,12 +134,12 @@
                     <div class="col-xl">
                         <div class="row">
                             <div class="col-lg col-md features">
-                                <img src="./images/Path 1531.png" alt="easy to use">
+                                <img src="./images/Path1531.png" alt="easy to use">
                                 <h4>دعم فني</h4>
                                 <p>يمكن للمستخدمين سهولة التواصل مع الدعم الفني للتطبيق عن طريق الشات</p>
                             </div>
                             <div class="col-lg col-md features">
-                                <img src="./images/Group 3114.png" alt="easy to use">
+                                <img src="./images/Group3114.png" alt="easy to use">
                                 <h4>سهولة الطلب</h4>
                                 <p>يتيمز مجرة بسهولة الطلب وإتمام عملية الشراء بشكل سلس وسهل</p>
                             </div>
@@ -150,11 +150,11 @@
 
             <section id="gift">
                 <div class="row justify-content-center">
-                    <div class="col-lg-5 paragraph">
+                    <div class="col-lg-6 paragraph">
                         <h1> إضافة المنتج كهدية</h1>
                         <p>يوفر لك تطبيق مجرة خدمة مميزة وجديدة وهي إمكانية الشراء وإرسال المنتجات كهدية للشخص الذي تريد مع تغليف المنتج وإرفاق الرسالة التي تكتبها</p>
                     </div>
-                    <div class="col-lg-5 photo text-left">
+                    <div class="col-lg-5 photo text-center">
                         <img src="./images/Group3090.png" alt="">
                     </div>
                 </div>
@@ -239,12 +239,16 @@
                     <h1>متوفرة للنظامين أندرويد وأيفون</h1>
                 </div>
                 <div class="row justify-content-center">
-                    <a class="play-store" href="">
-                        <img src="./images/Group1448@2x.png" alt="google play store">
-                    </a>
-                    <a href="">
-                        <img src="./images/Group1439@2x.png" alt="Apple play store">
-                    </a>
+                    <div class="col-lg-3">
+                        <a class="play-store" href="">
+                            <img src="./images/Group1448@2x.png" alt="google play store">
+                        </a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a class="play-store" href="">
+                            <img src="./images/Group1439@2x.png" alt="Apple play store">
+                        </a>
+                    </div>
                 </div>
             </section>
 
@@ -269,23 +273,23 @@
                         </li>
                     </ul>
                 </div>
-                <div class="container">
+                <div class="contact-us-form">
                     <form id="contact-form">
                         <div class="form-row justify-content-center">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-10">
                                 <div class="form-row">
-                                    <div class="col-md form-group form-group-name">
-                                        <input type="text" id="cname" name="name" minlength="2" class="form-group form-control custom-form-control form-control-lg" placeholder="الإسم" required>
+                                    <div id="cname" class="col-md form-group custom-form-group">
+                                        <input type="text" name="name" minlength="2" class="cname form-control custom-form-control" placeholder="الإسم" required>
                                     </div>
-                                    <div class="col-md form-group form-group-email">
-                                        <input type="email" id="cemail" name="email" class="form-control custom-form-control form-control-lg" placeholder="البريد الإلكتروني" required>
+                                    <div id="cnumber" class="col-md form-group custom-form-group">
+                                        <input type="number" name="mobile-number" class="cnumber form-control custom-form-control" placeholder="رقم الجوال" required>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control-lg form-control">
-                                    <textarea class="custom-texterea-control form-control" name="comment" id="ccomment" rows="6" placeholder="نص الرسالة أو تفاصيل المشروع" required></textarea>
+                                <div class="form-group custom-form-group">
+                                    <input type="text" id="subject" name="subject" class="form-control-lg custom-form-control form-control" placeholder="عنوان الرسالة">
+                                    <textarea class="custom-texterea-control form-control" name="massage" id="massage" rows="6" placeholder="الرسالة" required></textarea>
+                                    <button class="btn submit form-submit" type="submit" value="submit">إرسال</button>
                                 </div>  
-                                <button class="submit form-submit" type="submit" value="submit">إرسال</button>
                             </div>
                         </div>
                     </form>
