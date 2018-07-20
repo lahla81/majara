@@ -192,7 +192,7 @@ nav#navBar {
       padding-top: 40px;
       font-size: 35px;
       font-family: NotoKufiArabic-Regular;
-      line-height: 51px; }
+      color: #41434F; }
   #about .photo img {
     width: 70%; }
 
@@ -200,6 +200,8 @@ nav#navBar {
   padding-top: 210px;
   padding-bottom: 180px;
   background: rgba(27, 197, 255, 0.05); }
+  #feature .col-xl {
+    padding: 0; }
   #feature h1 {
     color: #2574F2;
     font-size: 40px;
@@ -207,4 +209,88 @@ nav#navBar {
   #feature h2 {
     color: #141414;
     font-family: NotoKufiArabic-Regular;
-    font-size: 40px; }
+    font-size: 40px;
+    margin-bottom: 75px; }
+  #feature .features {
+    padding: 55px 30px;
+    box-shadow: 0px 0px 10px 0px #dbd9d9;
+    min-height: 360px;
+    background: white;
+    margin: 15px; }
+    #feature .features img {
+      margin-bottom: 30px; }
+    #feature .features h4 {
+      font-size: 27px;
+      font-family: NotoKufiArabic-Regular;
+      color: #2574F2;
+      margin-bottom: 30px; }
+      @media (max-width: 1450px) and (min-width: 1200px) {
+        #feature .features h4 {
+          font-size: 20px; } }
+    #feature .features p {
+      font-size: 20px;
+      color: #B2B2B2;
+      font-family: NotoKufiArabic-Regular;
+      margin-bottom: 0; }
+      @media (max-width: 1450px) and (min-width: 1200px) {
+        #feature .features p {
+          font-size: 16px; } }
+
+#gift {
+  padding-top: 215px;
+  padding-bottom: 215px; }
+  #gift .paragraph {
+    padding-top: 120px;
+    padding-left: 0;
+    padding-right: 0; }
+    @media (max-width: 1400px) and (min-width: 993px) {
+      #gift .paragraph {
+        padding-top: 0px; } }
+    #gift .paragraph h1 {
+      color: #2574F2;
+      font-size: 40px;
+      font-family: NotoKufiArabic-Regular; }
+    #gift .paragraph p {
+      padding-top: 40px;
+      font-size: 35px;
+      font-family: NotoKufiArabic-Regular;
+      color: #41434F; }
+  #gift .photo img {
+    width: 70%; }
+
+#fronts {
+  padding-top: 135px;
+  padding-bottom: 135px;
+  background: rgba(27, 197, 255, 0.05);
+  background-position: 40% 0%; }
+
+#download {
+  padding-top: 260px;
+  padding-bottom: 260px; }
+  #download .Group3104 {
+    margin-bottom: 60px; }
+  #download h1 {
+    font-size: 40px;
+    color: #41434F;
+    font-family: NotoKufiArabic-Regular;
+    margin-bottom: 50px; }
+  #download .play-store img {
+    margin-left: 25px;
+    margin-right: 25px; }
+
+#contact-us {
+  padding-top: 120px;
+  padding-bottom: 100px;
+  background-image: url(../images/MaskGroup21.png);
+  background-size: cover;
+  background-position: center center; }
+  #contact-us h1 {
+    color: white;
+    font-size: 40px;
+    font-family: NotoKufiArabic-Regular;
+    margin-bottom: 40px; }
+  #contact-us .social .fab {
+    font-size: 20px;
+    color: white;
+    margin-left: 25px;
+    margin-right: 25px; }
