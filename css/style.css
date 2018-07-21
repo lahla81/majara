@@ -35,17 +35,20 @@ nav#navBar {
       nav#navBar .navagation {
         padding-left: 40px;
         padding-right: 40px; } }
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
       nav#navBar .navagation {
-        display: block; }
-        nav#navBar .navagation .navbar-brand {
-          float: left; }
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px; }
         nav#navBar .navagation #navbarTogglerDemo01 {
           position: absolute;
-          background: #3e66e6; } }
+          background: white; } }
+    @media (max-width: 552px) {
+      nav#navBar .navagation {
+        padding-left: 3px;
+        padding-right: 3px; } }
     nav#navBar .navagation button {
-      margin-top: 20px;
-      margin-right: 30px; }
+      margin-top: 20px; }
       nav#navBar .navagation button i.fa {
         color: white;
         padding: 10px;
@@ -57,22 +60,17 @@ nav#navBar {
           color: #3e66e6;
           background-color: white;
           border: 1px solid #3e66e6; }
-      @media (max-width: 380px) {
-        nav#navBar .navagation button {
-          margin-right: 10px; } }
-  nav#navBar li.active a {
-    background-color: #1bc5ff;
-    color: white;
-    border-radius: 30px; }
   nav#navBar a.nav-link {
     color: white;
     padding: 15px 20px;
     margin: 0 5px;
-    font-size: 20px; }
-    @media (min-width: 992px) and (max-width: 1200px) {
+    font-size: 15px; }
+    nav#navBar a.nav-link:hover, nav#navBar a.nav-link:focus, nav#navBar a.nav-link:active {
+      background-color: #182153;
+      color: white; }
+    @media (max-width: 991px) {
       nav#navBar a.nav-link {
-        margin: 0;
-        padding: 15px 10px; } }
+        color: #2574F2; } }
   nav#navBar .about-link {
     position: relative; }
     nav#navBar .about-link:before {
@@ -82,32 +80,47 @@ nav#navBar {
       height: 3px;
       background-color: white;
       bottom: 0px; }
+      @media (max-width: 992px) {
+        nav#navBar .about-link:before {
+          color: #2574F2; } }
   nav#navBar a.download-link {
-    margin-right: 50px; }
-  nav#navBar a.navbar-brand {
-    margin-right: 30px; }
-    nav#navBar a.navbar-brand img {
-      width: 80%; }
+    margin-right: 100px;
+    background-color: #1bc5ff;
+    border-radius: 30px; }
+    nav#navBar a.download-link:hover, nav#navBar a.download-link:focus, nav#navBar a.download-link:active {
+      background-color: #182153;
+      color: white; }
+    @media (max-width: 1040px) {
+      nav#navBar a.download-link {
+        margin-right: 10px; } }
     @media (max-width: 992px) {
-      nav#navBar a.navbar-brand {
-        margin-left: 30px;
-        margin-right: 0; } }
+      nav#navBar a.download-link {
+        color: white; } }
+  nav#navBar a.navbar-brand {
+    float: left; }
+    nav#navBar a.navbar-brand img {
+      width: 70%; }
     @media (max-width: 380px) {
       nav#navBar a.navbar-brand {
-        margin-left: 10px; } }
+        width: 150px;
+        padding-top: 15px; } }
   nav#navBar .navbar-collapse {
     flex-grow: 0; }
-  nav#navBar ul.navbar-nav li a:hover, nav#navBar ul.navbar-nav li a:focus, nav#navBar ul.navbar-nav li a:active {
-    background-color: #1bc5ff;
-    color: white;
-    border-radius: 30px; }
   nav#navBar a.nav-link.scroll.active {
     background-color: #182153;
     color: white; }
 
 #navBar.noTransparrent {
-  background: #3e66e6;
+  background: #2574F2;
+  box-shadow: 0px 0px 4px 2px #182153;
   padding: 5px 0; }
+  #navBar.noTransparrent .navagation {
+    box-shadow: 0 0 10px 5px rgba(13, 15, 19, 0.4);
+    margin-left: 50px;
+    margin-right: 50px; }
+    @media (max-width: 1200px) and (min-width: 991px) {
+      #navBar.noTransparrent .navagation a.nav-link {
+        padding: 15px 10px; } }
 
 #header {
   background-image: url(../images/Path11.png), url(../images/bg.png), url(../images/bg1.png);
@@ -115,6 +128,9 @@ nav#navBar {
   background-size: 40%, cover, cover;
   background-repeat: no-repeat, no-repeat,no-repeat;
   min-height: 100%; }
+  @media (max-width: 992px) {
+    #header {
+      background-position: 2% 80%, center center, 0px -120px; } }
   #header .overlay {
     padding-top: 180px;
     min-height: 100%; }
@@ -124,39 +140,50 @@ nav#navBar {
       margin-right: auto;
       display: flex; }
     #header .overlay .header .page-head-text h1 {
-      font-size: 30px;
+      font-size: 22.5px;
       color: white;
       margin-bottom: 30px;
       margin-top: 50px; }
-      @media (max-width: 1200px) {
+      @media (max-width: 1200px) and (min-width: 992px) {
         #header .overlay .header .page-head-text h1 {
           margin-bottom: 10px;
           margin-top: 20px; } }
     #header .overlay .header .page-head-text h2 {
       font-family: NotoKufiArabic-Regular;
-      font-size: 40px;
+      font-size: 30px;
       color: white;
       margin-bottom: 20px; }
-      @media (max-width: 1200px) {
+      @media (max-width: 1200px) and (min-width: 992px) {
         #header .overlay .header .page-head-text h2 {
           margin-bottom: 10px; } }
+    #header .overlay .header .page-head-text h1, #header .overlay .header .page-head-text h2 {
+      margin-right: 20px; }
+      @media (max-width: 992px) {
+        #header .overlay .header .page-head-text h1, #header .overlay .header .page-head-text h2 {
+          color: #141414; } }
     #header .overlay .header .page-head-text h4 {
       font-family: NotoKufiArabic-Regular;
-      font-size: 30px;
+      font-size: 22.5px;
       color: white;
       margin-top: 50px;
       margin-bottom: 30px; }
-      @media (max-width: 1200px) {
+      @media (max-width: 1200px) and (min-width: 992px) {
         #header .overlay .header .page-head-text h4 {
-          margin-bottom: 10px;
+          margin-bottom: 20px;
           margin-top: 20px; } }
+      @media (max-width: 992px) {
+        #header .overlay .header .page-head-text h4 {
+          color: #141414; } }
     #header .overlay .header .page-head-text .play-store {
-      position: relative;
+      padding: 0;
       margin-left: 25px;
       margin-bottom: 80px; }
-      @media (max-width: 1200px) {
+      #header .overlay .header .page-head-text .play-store img {
+        width: 100%; }
+      @media (max-width: 1200px) and (min-width: 992px) {
         #header .overlay .header .page-head-text .play-store {
-          margin-left: 10px; } }
+          margin-left: 10px;
+          margin-bottom: 50px; } }
     #header .overlay .header .page-head-text .on-button {
       position: relative; }
       #header .overlay .header .page-head-text .on-button .social {
@@ -167,7 +194,12 @@ nav#navBar {
           padding: 0;
           margin: 0; }
           #header .overlay .header .page-head-text .on-button .social ul li {
-            margin-right: 70px; }
+            margin-right: 35px;
+            margin-left: 35px; }
+            @media (max-width: 460px) {
+              #header .overlay .header .page-head-text .on-button .social ul li {
+                margin-right: 10px;
+                margin-left: 30px; } }
             #header .overlay .header .page-head-text .on-button .social ul li a {
               color: white; }
               #header .overlay .header .page-head-text .on-button .social ul li a i.fab {
@@ -177,20 +209,33 @@ nav#navBar {
         @media (max-width: 1400px) {
           #header .overlay .header .page-head-text .on-button .social {
             left: -10px; } }
+        @media (max-width: 991px) {
+          #header .overlay .header .page-head-text .on-button .social {
+            top: 50%;
+            transform: translateY(-25%); } }
+      @media (max-width: 991px) {
+        #header .overlay .header .page-head-text .on-button {
+          background: #2574F2;
+          box-shadow: 0 0 10px 1px #182153;
+          padding: 30px; } }
 
 #about {
   padding-top: 200px;
   padding-bottom: 200px; }
+  @media (max-width: 992px) {
+    #about {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
   #about .paragraph {
     padding-top: 120px;
-    padding-left: 0;
-    padding-right: 0; }
-    @media (max-width: 1400px) and (min-width: 993px) {
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media (max-width: 1200px) and (min-width: 993px) {
       #about .paragraph {
-        padding-top: 0px; } }
+        padding-top: 50px; } }
     #about .paragraph p {
       padding-top: 40px;
-      font-size: 35px;
+      font-size: 26.25px;
       font-family: NotoKufiArabic-Regular;
       color: #41434F; }
   #about .photo img {
@@ -200,16 +245,20 @@ nav#navBar {
   padding-top: 210px;
   padding-bottom: 180px;
   background: rgba(27, 197, 255, 0.05); }
+  @media (max-width: 992px) {
+    #feature {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
   #feature .col-xl {
     padding: 0; }
   #feature h1 {
     color: #2574F2;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 20px; }
   #feature h2 {
     color: #141414;
     font-family: NotoKufiArabic-Regular;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 75px; }
   #feature .features {
     padding: 55px 30px;
@@ -220,7 +269,7 @@ nav#navBar {
     #feature .features img {
       margin-bottom: 30px; }
     #feature .features h4 {
-      font-size: 27px;
+      font-size: 20px;
       font-family: NotoKufiArabic-Regular;
       color: #2574F2;
       margin-bottom: 30px; }
@@ -228,7 +277,7 @@ nav#navBar {
         #feature .features h4 {
           font-size: 20px; } }
     #feature .features p {
-      font-size: 20px;
+      font-size: 15px;
       color: #B2B2B2;
       font-family: NotoKufiArabic-Regular;
       margin-bottom: 0; }
@@ -239,20 +288,24 @@ nav#navBar {
 #gift {
   padding-top: 215px;
   padding-bottom: 215px; }
+  @media (max-width: 992px) {
+    #gift {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
   #gift .paragraph {
     padding-top: 120px;
-    padding-left: 0;
-    padding-right: 0; }
-    @media (max-width: 1400px) and (min-width: 993px) {
+    padding-left: 20px;
+    padding-right: 20px; }
+    @media (max-width: 1200px) and (min-width: 993px) {
       #gift .paragraph {
-        padding-top: 0px; } }
+        padding-top: 50px; } }
     #gift .paragraph h1 {
       color: #2574F2;
-      font-size: 40px;
+      font-size: 30px;
       font-family: NotoKufiArabic-Regular; }
     #gift .paragraph p {
       padding-top: 40px;
-      font-size: 35px;
+      font-size: 27px;
       font-family: NotoKufiArabic-Regular;
       color: #41434F; }
   #gift .photo img {
@@ -267,18 +320,23 @@ nav#navBar {
 #download {
   padding-top: 260px;
   padding-bottom: 260px; }
+  @media (max-width: 992px) {
+    #download {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
   #download .Group3104 {
     margin-bottom: 60px; }
     @media (max-width: 400px) {
       #download .Group3104 {
         width: 90%; } }
   #download h1 {
-    font-size: 40px;
+    font-size: 30px;
     color: #41434F;
     font-family: NotoKufiArabic-Regular;
     margin-bottom: 50px; }
   #download .play-store img {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 30px; }
 
 #contact-us {
   padding-top: 120px;
@@ -289,13 +347,13 @@ nav#navBar {
   height: 950px; }
   #contact-us h1 {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     font-family: NotoKufiArabic-Regular;
     margin-bottom: 40px; }
   #contact-us .social {
     margin-bottom: 60px; }
     #contact-us .social .fab {
-      font-size: 20px;
+      font-size: 15px;
       color: white;
       margin-left: 25px;
       margin-right: 25px; }
@@ -309,7 +367,7 @@ nav#navBar {
     border-radius: 0;
     margin-bottom: 0;
     color: #B2B2B2;
-    font-size: 20px;
+    font-size: 15px;
     font-family: NotoKufiArabic-Regular; }
   #contact-us .contact-us-form .custom-form-control {
     height: 100%; }
@@ -327,7 +385,7 @@ nav#navBar {
     border-top-left-radius: 12px; }
   #contact-us .contact-us-form button.submit {
     background: #45C1F0;
-    font-size: 25px;
+    font-size: 20px;
     margin-top: 60px;
     padding: 25px 80px;
     border-radius: 50px;
@@ -343,4 +401,6 @@ nav#navBar {
     #contact-us .contact-us-form .cnumber {
       border-radius: 0; }
     #contact-us .contact-us-form .custom-form-group {
-      height: 70px; } }
+      height: 70px; }
+    #contact-us .contact-us-form button.submit {
+      padding: 20px 40px; } }
