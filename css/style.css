@@ -384,16 +384,61 @@ nav#navBar {
         #gift .photo img {
           width: 60%; } }
 
-#fronts .col-lg-9 {
-  background: rgba(27, 197, 255, 0.05);
-  padding-top: 135px;
-  padding-bottom: 135px; }
-
-#fronts .carousel-item .col-lg-3 {
-  margin-top: 70px; }
-
-#fronts .carousel-item .col-lg-4 img {
-  width: 90%; }
+#fronts {
+  position: relative; }
+  #fronts h2 {
+    position: absolute;
+    left: 19%;
+    top: 35%;
+    transform: translateX(-50%);
+    color: #467dc0;
+    font: 30px; }
+  #fronts #carouselExampleControls .carousel-inner {
+    padding-right: 47px; }
+  #fronts #carouselExampleControls .carousel-item {
+    flex-direction: row; }
+    #fronts #carouselExampleControls .carousel-item .item {
+      width: 20%;
+      margin: 0px 20px; }
+      #fronts #carouselExampleControls .carousel-item .item img {
+        width: 100%; }
+    #fronts #carouselExampleControls .carousel-item .item.one {
+      margin-top: 50px; }
+      #fronts #carouselExampleControls .carousel-item .item.one img {
+        float: left;
+        width: 88%; }
+    #fronts #carouselExampleControls .carousel-item .item.three {
+      margin-top: 50px; }
+      #fronts #carouselExampleControls .carousel-item .item.three img {
+        float: right;
+        width: 88%; }
+    #fronts #carouselExampleControls .carousel-item .item.main {
+      position: absolute;
+      top: 51%;
+      left: 7.6%; }
+      #fronts #carouselExampleControls .carousel-item .item.main .carousel-title {
+        font-size: 22px;
+        font-weight: NotoKufiArabic-Regular;
+        color: #45c1f0;
+        line-height: 40px; }
+  #fronts #carouselExampleControls .controls .carousel-control-prev,
+  #fronts #carouselExampleControls .controls .carousel-control-next {
+    border: 2px solid #45c1f0;
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+    top: 50%; }
+    #fronts #carouselExampleControls .controls .carousel-control-prev i.fas,
+    #fronts #carouselExampleControls .controls .carousel-control-next i.fas {
+      color: #45c1f0;
+      font-size: 18px;
+      font-weight: NotoKufiArabic-Regular; }
+  #fronts #carouselExampleControls .controls .carousel-control-prev {
+    left: 11%;
+    transform: translateX(-50%); }
+  #fronts #carouselExampleControls .controls .carousel-control-next {
+    right: 74%;
+    transform: translateX(50%); }
 
 #download {
   padding-top: 190px;
