@@ -21,7 +21,7 @@ body {
   padding-right: 0; }
 
 nav#navBar {
-  padding: 59px 0 30px;
+  padding: 80px 0 43px;
   transition: all 0.5s ease-in; }
   nav#navBar .navagation {
     background-color: transparent;
@@ -29,8 +29,7 @@ nav#navBar {
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    padding-left: 128px;
-    padding-right: 121px; }
+    padding: 0 151px 36px 182px; }
     @media (min-width: 992px) and (max-width: 1270px) {
       nav#navBar .navagation {
         padding-left: 40px;
@@ -64,24 +63,28 @@ nav#navBar {
     margin-bottom: 25px; }
   nav#navBar a.nav-link {
     color: white;
-    padding: 10px 18px;
-    margin: 0px 3px;
-    font-size: 16px;
+    padding: 8px 17px;
+    margin: 0 11px;
+    font-size: 20px;
+    line-height: 38px;
     position: relative; }
     nav#navBar a.nav-link:hover:before, nav#navBar a.nav-link:focus:before, nav#navBar a.nav-link:active:before {
       content: "";
       position: absolute;
-      width: 37px;
-      height: 2.5px;
+      width: 48px;
+      height: 3px;
       background-color: white;
-      bottom: 0px; }
+      bottom: -8px; }
     @media (max-width: 992px) {
       nav#navBar a.nav-link {
         margin-bottom: 20px; } }
   nav#navBar a.download-link {
     margin-right: 23px;
     background-color: #1bc5ff;
-    border-radius: 30px; }
+    border-radius: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 27px; }
     nav#navBar a.download-link:hover, nav#navBar a.download-link:focus, nav#navBar a.download-link:active {
       background-color: white;
       color: #3e66e6; }
@@ -92,9 +95,12 @@ nav#navBar {
       nav#navBar a.download-link {
         color: white; } }
   nav#navBar a.navbar-brand {
-    float: left; }
+    float: left;
+    width: 240px;
+    padding: 0;
+    margin: 0; }
     nav#navBar a.navbar-brand img {
-      width: 79%; }
+      width: 100%; }
     @media (max-width: 380px) {
       nav#navBar a.navbar-brand {
         width: 150px;
@@ -106,10 +112,10 @@ nav#navBar {
     nav#navBar a.nav-link.scroll.active:before {
       content: "";
       position: absolute;
-      width: 37px;
-      height: 2.5px;
+      width: 48px;
+      height: 3px;
       background-color: white;
-      bottom: 0px; }
+      bottom: -8px; }
   nav#navBar a.download-link.scroll.active:hover, nav#navBar a.download-link.scroll.active:focus, nav#navBar a.download-link.scroll.active:active {
     color: #1bc5ff; }
 
@@ -118,6 +124,8 @@ nav#navBar {
   border-bottom: 1px solid black;
   padding: 0; }
   #navBar.noTransparrent .navagation {
+    padding-bottom: 10px;
+    padding-top: 10px;
     margin-left: 50px;
     margin-right: 50px; }
     #navBar.noTransparrent .navagation li {
@@ -473,7 +481,7 @@ nav#navBar {
 #contact-us {
   padding-top: 90px;
   padding-bottom: 80px;
-  background-image: url(../images/MaskGroup21@2x.png);
+  background-image: url(../images/MaskGroup21.png);
   background-size: auto;
   background-position: center center;
   height: 755px; }
