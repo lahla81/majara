@@ -367,16 +367,16 @@ nav#navBar {
     padding-right: 70px;
     padding-left: 0; }
     #about .photo img {
-      height: 520.19px; }
+      width: 524px; }
     @media (max-width: 1250px) {
       #about .photo img {
-        height: 100%; } }
+        width: 100%; } }
     @media (max-width: 992px) {
       #about .photo {
         padding-right: 15px; } }
     @media (max-width: 400px) {
       #about .photo img {
-        height: 70%; } }
+        width: 70%; } }
 
 #feature {
   padding: 194px 111px;
@@ -523,108 +523,110 @@ nav#navBar {
     @media (max-width: 576px) {
       #fronts h2 {
         display: none; } }
-  #fronts #carouselExampleControls .carousel-item {
-    flex-direction: row; }
-    #fronts #carouselExampleControls .carousel-item .item {
-      width: 20%;
-      margin: 0px 20px; }
-      #fronts #carouselExampleControls .carousel-item .item img {
-        width: 100%;
-        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.25);
-        margin-bottom: 30px; }
-      @media (max-width: 768px) {
-        #fronts #carouselExampleControls .carousel-item .item {
-          width: 50%;
-          margin: 0 30px; } }
-    #fronts #carouselExampleControls .carousel-item .item.one, #fronts #carouselExampleControls .carousel-item .item.three {
-      margin-top: 70px; }
-      #fronts #carouselExampleControls .carousel-item .item.one img, #fronts #carouselExampleControls .carousel-item .item.three img {
-        float: left;
-        width: 86%; }
-      @media (max-width: 1500px) {
-        #fronts #carouselExampleControls .carousel-item .item.one, #fronts #carouselExampleControls .carousel-item .item.three {
-          margin-top: 50px; } }
-      @media (max-width: 1200px) {
-        #fronts #carouselExampleControls .carousel-item .item.one, #fronts #carouselExampleControls .carousel-item .item.three {
-          margin-top: 35px; } }
-      @media (max-width: 768px) {
-        #fronts #carouselExampleControls .carousel-item .item.one, #fronts #carouselExampleControls .carousel-item .item.three {
-          display: none; } }
-    #fronts #carouselExampleControls .carousel-item .item.one img {
-      float: left; }
-    #fronts #carouselExampleControls .carousel-item .item.three img {
-      float: right; }
-    #fronts #carouselExampleControls .carousel-item .item.main {
-      position: absolute;
-      top: 51%;
-      left: 18%;
-      transform: translateX(-50%); }
-      #fronts #carouselExampleControls .carousel-item .item.main .carousel-title {
-        font-size: 30px;
-        font-weight: NotoKufiArabic-Regular;
+  #fronts #carouselExampleControls {
+    width: 100%; }
+    #fronts #carouselExampleControls .carousel-item {
+      flex-direction: row; }
+      #fronts #carouselExampleControls .carousel-item .item {
+        width: 20%;
+        margin: 0px 20px; }
+        #fronts #carouselExampleControls .carousel-item .item img {
+          width: 100%;
+          box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.25);
+          margin-bottom: 30px; }
+        @media (max-width: 768px) {
+          #fronts #carouselExampleControls .carousel-item .item {
+            width: 50%;
+            margin: 0 30px; } }
+      #fronts #carouselExampleControls .carousel-item .item.one, #fronts #carouselExampleControls .carousel-item .item.three {
+        margin-top: 70px; }
+        #fronts #carouselExampleControls .carousel-item .item.one img, #fronts #carouselExampleControls .carousel-item .item.three img {
+          float: left;
+          width: 86%; }
+        @media (max-width: 1500px) {
+          #fronts #carouselExampleControls .carousel-item .item.one, #fronts #carouselExampleControls .carousel-item .item.three {
+            margin-top: 50px; } }
+        @media (max-width: 1200px) {
+          #fronts #carouselExampleControls .carousel-item .item.one, #fronts #carouselExampleControls .carousel-item .item.three {
+            margin-top: 35px; } }
+        @media (max-width: 768px) {
+          #fronts #carouselExampleControls .carousel-item .item.one, #fronts #carouselExampleControls .carousel-item .item.three {
+            display: none; } }
+      #fronts #carouselExampleControls .carousel-item .item.one img {
+        float: left; }
+      #fronts #carouselExampleControls .carousel-item .item.three img {
+        float: right; }
+      #fronts #carouselExampleControls .carousel-item .item.main {
+        position: absolute;
+        top: 51%;
+        left: 18%;
+        transform: translateX(-50%); }
+        #fronts #carouselExampleControls .carousel-item .item.main .carousel-title {
+          font-size: 30px;
+          font-weight: NotoKufiArabic-Regular;
+          color: #45C1F0;
+          line-height: 56px; }
+        @media (max-width: 1200px) {
+          #fronts #carouselExampleControls .carousel-item .item.main {
+            left: 17%; }
+            #fronts #carouselExampleControls .carousel-item .item.main .carousel-title {
+              font-size: 24px;
+              line-height: 44px; } }
+        @media (max-width: 992px) {
+          #fronts #carouselExampleControls .carousel-item .item.main {
+            left: 13%; }
+            #fronts #carouselExampleControls .carousel-item .item.main .carousel-title {
+              font-size: 18px;
+              line-height: 30px; } }
+        @media (max-width: 768px) {
+          #fronts #carouselExampleControls .carousel-item .item.main {
+            left: 15%; } }
+        @media (max-width: 576px) {
+          #fronts #carouselExampleControls .carousel-item .item.main {
+            top: 40%; } }
+    #fronts #carouselExampleControls .controls .carousel-control-prev,
+    #fronts #carouselExampleControls .controls .carousel-control-next {
+      border: 2px solid #45C1F0;
+      border-radius: 50%;
+      height: 70px;
+      width: 70px;
+      top: 50%; }
+      #fronts #carouselExampleControls .controls .carousel-control-prev i.fas,
+      #fronts #carouselExampleControls .controls .carousel-control-next i.fas {
         color: #45C1F0;
-        line-height: 56px; }
+        font-size: 18px;
+        font-weight: NotoKufiArabic-Regular; }
       @media (max-width: 1200px) {
-        #fronts #carouselExampleControls .carousel-item .item.main {
-          left: 17%; }
-          #fronts #carouselExampleControls .carousel-item .item.main .carousel-title {
-            font-size: 24px;
-            line-height: 44px; } }
+        #fronts #carouselExampleControls .controls .carousel-control-prev,
+        #fronts #carouselExampleControls .controls .carousel-control-next {
+          height: 50px;
+          width: 50px; } }
       @media (max-width: 992px) {
-        #fronts #carouselExampleControls .carousel-item .item.main {
-          left: 13%; }
-          #fronts #carouselExampleControls .carousel-item .item.main .carousel-title {
-            font-size: 18px;
-            line-height: 30px; } }
+        #fronts #carouselExampleControls .controls .carousel-control-prev,
+        #fronts #carouselExampleControls .controls .carousel-control-next {
+          height: 35px;
+          width: 35px; } }
+    #fronts #carouselExampleControls .controls .carousel-control-prev {
+      left: 12%;
+      transform: translateX(-50%); }
+      @media (max-width: 1500px) {
+        #fronts #carouselExampleControls .controls .carousel-control-prev {
+          left: 10%; } }
+      @media (max-width: 992px) {
+        #fronts #carouselExampleControls .controls .carousel-control-prev {
+          left: 8%; } }
+    #fronts #carouselExampleControls .controls .carousel-control-next {
+      right: 74%;
+      transform: translateX(50%); }
+      @media (max-width: 1500px) {
+        #fronts #carouselExampleControls .controls .carousel-control-next {
+          right: 72%; } }
+      @media (max-width: 992px) {
+        #fronts #carouselExampleControls .controls .carousel-control-next {
+          right: 77%; } }
       @media (max-width: 768px) {
-        #fronts #carouselExampleControls .carousel-item .item.main {
-          left: 15%; } }
-      @media (max-width: 576px) {
-        #fronts #carouselExampleControls .carousel-item .item.main {
-          top: 40%; } }
-  #fronts #carouselExampleControls .controls .carousel-control-prev,
-  #fronts #carouselExampleControls .controls .carousel-control-next {
-    border: 2px solid #45C1F0;
-    border-radius: 50%;
-    height: 70px;
-    width: 70px;
-    top: 50%; }
-    #fronts #carouselExampleControls .controls .carousel-control-prev i.fas,
-    #fronts #carouselExampleControls .controls .carousel-control-next i.fas {
-      color: #45C1F0;
-      font-size: 18px;
-      font-weight: NotoKufiArabic-Regular; }
-    @media (max-width: 1200px) {
-      #fronts #carouselExampleControls .controls .carousel-control-prev,
-      #fronts #carouselExampleControls .controls .carousel-control-next {
-        height: 50px;
-        width: 50px; } }
-    @media (max-width: 992px) {
-      #fronts #carouselExampleControls .controls .carousel-control-prev,
-      #fronts #carouselExampleControls .controls .carousel-control-next {
-        height: 35px;
-        width: 35px; } }
-  #fronts #carouselExampleControls .controls .carousel-control-prev {
-    left: 12%;
-    transform: translateX(-50%); }
-    @media (max-width: 1500px) {
-      #fronts #carouselExampleControls .controls .carousel-control-prev {
-        left: 10%; } }
-    @media (max-width: 992px) {
-      #fronts #carouselExampleControls .controls .carousel-control-prev {
-        left: 8%; } }
-  #fronts #carouselExampleControls .controls .carousel-control-next {
-    right: 74%;
-    transform: translateX(50%); }
-    @media (max-width: 1500px) {
-      #fronts #carouselExampleControls .controls .carousel-control-next {
-        right: 72%; } }
-    @media (max-width: 992px) {
-      #fronts #carouselExampleControls .controls .carousel-control-next {
-        right: 77%; } }
-    @media (max-width: 768px) {
-      #fronts #carouselExampleControls .controls .carousel-control-next {
-        right: 70%; } }
+        #fronts #carouselExampleControls .controls .carousel-control-next {
+          right: 70%; } }
 
 #download {
   padding-top: 270px;
@@ -640,6 +642,9 @@ nav#navBar {
     margin-bottom: 55px; }
     #download .Group3104 img {
       width: 100%; }
+    @media (max-width: 992px) {
+      #download .Group3104 {
+        width: 80%; } }
   #download h1 {
     font-size: 40px;
     line-height: 76px;
@@ -659,9 +664,10 @@ nav#navBar {
   padding-top: 103px;
   padding-bottom: 97px;
   background-image: url(../images/MaskGroup21.png);
-  background-size: auto;
+  background-size: cover;
   background-position: center center;
-  height: 954px; }
+  height: 954px;
+  position: relative; }
   #contact-us h1 {
     color: white;
     font-size: 40px;
@@ -730,8 +736,8 @@ nav#navBar {
       font-family: NotoKufiArabic-Regular;
       box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
       #contact-us .contact-us-form button.submit:hover, #contact-us .contact-us-form button.submit:focus, #contact-us .contact-us-form button.submit:active {
-        color: #2574F2;
-        box-shadow: none; }
+        box-shadow: none;
+        padding: 8px 78px; }
     @media (max-width: 575px) {
       #contact-us .contact-us-form #cname {
         padding-left: 5px; }
