@@ -39,7 +39,7 @@ nav#navBar {
     @media (max-width: 1250px) {
       nav#navBar .navagation {
         padding: 0 40px 25px 70px; } }
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
       nav#navBar .navagation {
         padding-left: 30px;
         padding-right: 30px; }
@@ -47,7 +47,7 @@ nav#navBar {
           position: absolute;
           background: #3e66e6;
           box-shadow: 0 0 3px 1px #3d3d3c;
-          margin-top: 55px;
+          margin-top: 70px;
           margin-right: 15px; } }
     @media (max-width: 552px) {
       nav#navBar .navagation {
@@ -68,6 +68,9 @@ nav#navBar {
           border: 1px solid #3e66e6; }
   nav#navBar li {
     margin-bottom: 25px; }
+    @media (max-width: 991px) {
+      nav#navBar li {
+        margin-bottom: 15px; } }
   nav#navBar a.nav-link {
     color: white;
     padding: 8px 17px;
@@ -82,6 +85,9 @@ nav#navBar {
       height: 3px;
       background-color: white;
       bottom: -8px; }
+      @media (max-width: 991px) {
+        nav#navBar a.nav-link:hover:before, nav#navBar a.nav-link:focus:before, nav#navBar a.nav-link:active:before {
+          bottom: 0; } }
     @media (max-width: 1250px) {
       nav#navBar a.nav-link {
         padding: 3px 10px;
@@ -100,7 +106,8 @@ nav#navBar {
     nav#navBar a.download-link:before {
       display: none; }
     nav#navBar a.download-link:hover, nav#navBar a.download-link:focus, nav#navBar a.download-link:active {
-      color: #3e66e6; }
+      color: #3e66e6;
+      box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
     @media (max-width: 1040px) {
       nav#navBar a.download-link {
         margin-right: 10px; } }
@@ -118,8 +125,6 @@ nav#navBar {
       nav#navBar a.navbar-brand {
         width: 150px;
         padding-top: 15px; } }
-  nav#navBar .navbar-collapse {
-    flex-grow: 0; }
   nav#navBar a.nav-link.scroll.active {
     background: transparent; }
     nav#navBar a.nav-link.scroll.active:before {
@@ -129,6 +134,9 @@ nav#navBar {
       height: 3px;
       background-color: white;
       bottom: -8px; }
+      @media (max-width: 991px) {
+        nav#navBar a.nav-link.scroll.active:before {
+          bottom: 0; } }
   nav#navBar a.download-link.scroll.active:hover, nav#navBar a.download-link.scroll.active:focus, nav#navBar a.download-link.scroll.active:active {
     color: #1bc5ff; }
 
@@ -160,8 +168,10 @@ nav#navBar {
     @media (max-width: 992px) {
       #header .overlay {
         padding-top: 120px; } }
+    @media (max-width: 852px) {
+      #header .overlay .header .photo {
+        min-width: 100%; } }
     #header .overlay .header .mobile-slider {
-      width: 362.83px;
       margin-right: 348px;
       margin-left: 204px; }
       #header .overlay .header .mobile-slider img {
@@ -181,22 +191,16 @@ nav#navBar {
       @media (max-width: 992px) {
         #header .overlay .header .mobile-slider {
           margin-right: 50px;
-          margin-left: 20px;
-          width: 250px; } }
-      @media (max-width: 739px) {
+          margin-left: 20px; } }
+      @media (max-width: 852px) {
         #header .overlay .header .mobile-slider {
-          margin-right: 80px; }
+          margin-right: auto;
+          margin-left: auto; }
           #header .overlay .header .mobile-slider img {
-            width: 80%; } }
-      @media (max-width: 739px) {
-        #header .overlay .header .mobile-slider {
-          margin-right: 10px;
-          margin-left: 10px; }
-          #header .overlay .header .mobile-slider img {
-            width: 100%; } }
+            width: 75%; } }
     #header .overlay .header .header-paragraph .page-head-text {
       margin-top: 34px; }
-      @media (max-width: 739px) {
+      @media (max-width: 852px) {
         #header .overlay .header .header-paragraph .page-head-text {
           margin-right: 80px; } }
       @media (max-width: 576px) {
@@ -211,7 +215,7 @@ nav#navBar {
         @media (max-width: 992px) {
           #header .overlay .header .header-paragraph .page-head-text span.dash {
             margin-right: 10px; } }
-        @media (max-width: 739px) {
+        @media (max-width: 852px) {
           #header .overlay .header .header-paragraph .page-head-text span.dash {
             color: #141414; } }
       #header .overlay .header .header-paragraph .page-head-text span.majara {
@@ -219,7 +223,7 @@ nav#navBar {
         color: white;
         line-height: 56px;
         margin-top: 10px; }
-        @media (max-width: 739px) {
+        @media (max-width: 852px) {
           #header .overlay .header .header-paragraph .page-head-text span.majara {
             color: #141414; } }
       #header .overlay .header .header-paragraph .page-head-text h2 {
@@ -233,7 +237,7 @@ nav#navBar {
           #header .overlay .header .header-paragraph .page-head-text h2 {
             font-size: 24px;
             margin-right: 10px; } }
-        @media (max-width: 739px) {
+        @media (max-width: 852px) {
           #header .overlay .header .header-paragraph .page-head-text h2 {
             font-size: 40px; } }
       #header .overlay .header .header-paragraph .page-head-text h4 {
@@ -248,7 +252,7 @@ nav#navBar {
           #header .overlay .header .header-paragraph .page-head-text h4 {
             margin-bottom: 15px;
             margin-top: 20px; } }
-        @media (max-width: 739px) {
+        @media (max-width: 852px) {
           #header .overlay .header .header-paragraph .page-head-text h4 {
             color: #141414; } }
       #header .overlay .header .header-paragraph .page-head-text .play-store {
@@ -268,7 +272,7 @@ nav#navBar {
             margin-right: 5px;
             margin-left: 5px;
             margin-bottom: 20px; } }
-        @media (max-width: 739px) {
+        @media (max-width: 852px) {
           #header .overlay .header .header-paragraph .page-head-text .play-store {
             width: 150px;
             margin-right: 12px;
@@ -299,7 +303,7 @@ nav#navBar {
               color: #3b5999; }
             #header .overlay .header .header-paragraph .on-button .social ul li a i.fa-twitter:hover, #header .overlay .header .header-paragraph .on-button .social ul li a i.fa-twitter:active, #header .overlay .header .header-paragraph .on-button .social ul li a i.fa-twitter:focus {
               color: #55acee; }
-          @media (max-width: 739px) {
+          @media (max-width: 852px) {
             #header .overlay .header .header-paragraph .on-button .social ul li {
               margin-right: 60px;
               margin-left: 60px; } }
@@ -324,7 +328,7 @@ nav#navBar {
         background: rgba(37, 116, 242, 0.6);
         box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.25);
         padding: 25px 5px; } }
-    @media (max-width: 739px) {
+    @media (max-width: 852px) {
       #header .overlay .header .header-paragraph .on-button {
         margin-right: 80px; } }
     @media (max-width: 576px) {
