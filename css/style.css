@@ -646,7 +646,7 @@ nav#navBar {
     margin-bottom: 30px;
     border-radius: 12px; }
     #download .play-store img:hover, #download .play-store img:active, #download .play-store img:focus {
-      box-shadow: 0  0  2px 2px #3d3d3c; }
+      box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
     @media (max-width: 768px) {
       #download .play-store img {
         width: 100%; } }
