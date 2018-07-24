@@ -398,7 +398,7 @@ nav#navBar {
     line-height: 76px;
     margin-bottom: 63px; }
   #feature .features {
-    padding: 58px 30px 37px;
+    padding: 58px 20px 37px;
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.11);
     background: white;
     margin: 14px; }
@@ -410,18 +410,24 @@ nav#navBar {
       font-family: NotoKufiArabic-Regular;
       color: #2574F2;
       margin-bottom: 10px; }
-      @media (max-width: 1450px) and (min-width: 1200px) {
+      @media (max-width: 1556px) and (min-width: 1200px) {
         #feature .features h4 {
-          font-size: 20px; } }
+          font-size: 17px; } }
     #feature .features p {
       font-size: 20px;
       line-height: 31px;
       color: #B2B2B2;
       font-family: NotoKufiArabic-Regular;
       margin-bottom: 20px; }
-      @media (max-width: 1450px) and (min-width: 1200px) {
+      @media (max-width: 1829px) and (min-width: 1713px) {
         #feature .features p {
-          font-size: 16px; } }
+          font-size: 18px; } }
+      @media (max-width: 1556px) and (min-width: 1200px) {
+        #feature .features p {
+          font-size: 14px; } }
+      @media (max-width: 1428px) and (min-width: 1348px) {
+        #feature .features p {
+          font-size: 12px; } }
 
 #gift {
   padding-top: 216px;
@@ -583,7 +589,9 @@ nav#navBar {
             left: 15%; } }
         @media (max-width: 576px) {
           #fronts #carouselExampleControls .carousel-item .item.main {
-            top: 40%; } }
+            top: 40%;
+            left: 13%;
+            transform: translateX(-53%); } }
     #fronts #carouselExampleControls .controls .carousel-control-prev,
     #fronts #carouselExampleControls .controls .carousel-control-next {
       border: 2px solid #45C1F0;
