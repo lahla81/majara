@@ -46,7 +46,9 @@ nav#navBar {
         nav#navBar .navagation #navbarTogglerDemo01 {
           position: absolute;
           background: #3e66e6;
-          box-shadow: 0 0 3px 1px #3d3d3c; } }
+          box-shadow: 0 0 3px 1px #3d3d3c;
+          margin-top: 55px;
+          margin-right: 15px; } }
     @media (max-width: 552px) {
       nav#navBar .navagation {
         padding-left: 3px;
@@ -95,8 +97,9 @@ nav#navBar {
     padding-left: 25px;
     padding-right: 25px;
     margin-right: 27px; }
+    nav#navBar a.download-link:before {
+      display: none; }
     nav#navBar a.download-link:hover, nav#navBar a.download-link:focus, nav#navBar a.download-link:active {
-      background-color: white;
       color: #3e66e6; }
     @media (max-width: 1040px) {
       nav#navBar a.download-link {
@@ -130,12 +133,13 @@ nav#navBar {
     color: #1bc5ff; }
 
 #navBar.noTransparrent {
-  background: #3e66e6;
-  border-bottom: 1px solid black;
+  background: #2574F2;
   padding: 0; }
   #navBar.noTransparrent .navagation {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-top: 10px; }
+    #navBar.noTransparrent .navagation li {
+      margin-bottom: 0px; }
     #navBar.noTransparrent .navagation a.navbar-brand img {
       width: 60%; }
 
@@ -195,6 +199,9 @@ nav#navBar {
       @media (max-width: 739px) {
         #header .overlay .header .header-paragraph .page-head-text {
           margin-right: 80px; } }
+      @media (max-width: 576px) {
+        #header .overlay .header .header-paragraph .page-head-text {
+          margin-right: 25px; } }
       #header .overlay .header .header-paragraph .page-head-text span.dash {
         line-height: 56px;
         font-size: 40px;
@@ -220,7 +227,8 @@ nav#navBar {
         font-size: 40px;
         line-height: 60px;
         color: white;
-        margin-right: 28px; }
+        margin-right: 28px;
+        margin-top: 13px; }
         @media (max-width: 992px) {
           #header .overlay .header .header-paragraph .page-head-text h2 {
             font-size: 24px;
@@ -285,13 +293,17 @@ nav#navBar {
             #header .overlay .header .header-paragraph .on-button .social ul li a i.fab {
               font-size: 34px;
               font-weight: normal; }
-              #header .overlay .header .header-paragraph .on-button .social ul li a i.fab:hover, #header .overlay .header .header-paragraph .on-button .social ul li a i.fab:active, #header .overlay .header .header-paragraph .on-button .social ul li a i.fab:focus {
-                color: #1bc5ff; }
+            #header .overlay .header .header-paragraph .on-button .social ul li a i.fa-instagram:hover, #header .overlay .header .header-paragraph .on-button .social ul li a i.fa-instagram:active, #header .overlay .header .header-paragraph .on-button .social ul li a i.fa-instagram:focus {
+              color: #e4405f; }
+            #header .overlay .header .header-paragraph .on-button .social ul li a i.fa-facebook-f:hover, #header .overlay .header .header-paragraph .on-button .social ul li a i.fa-facebook-f:active, #header .overlay .header .header-paragraph .on-button .social ul li a i.fa-facebook-f:focus {
+              color: #3b5999; }
+            #header .overlay .header .header-paragraph .on-button .social ul li a i.fa-twitter:hover, #header .overlay .header .header-paragraph .on-button .social ul li a i.fa-twitter:active, #header .overlay .header .header-paragraph .on-button .social ul li a i.fa-twitter:focus {
+              color: #55acee; }
           @media (max-width: 739px) {
             #header .overlay .header .header-paragraph .on-button .social ul li {
               margin-right: 60px;
               margin-left: 60px; } }
-          @media (max-width: 490px) {
+          @media (max-width: 576px) {
             #header .overlay .header .header-paragraph .on-button .social ul li {
               margin-right: 20px;
               margin-left: 20px; } }
@@ -315,9 +327,12 @@ nav#navBar {
     @media (max-width: 739px) {
       #header .overlay .header .header-paragraph .on-button {
         margin-right: 80px; } }
+    @media (max-width: 576px) {
+      #header .overlay .header .header-paragraph .on-button {
+        margin-right: 25px; } }
 
 #about {
-  padding: 185px 30px 215px; }
+  padding: 185px 10px 215px; }
   @media (max-width: 992px) {
     #about {
       padding-top: 100px;
@@ -374,7 +389,8 @@ nav#navBar {
   #feature h1 {
     color: #2574F2;
     font-size: 40px;
-    line-height: 76px; }
+    line-height: 76px;
+    margin-bottom: 0; }
   #feature h2 {
     color: #141414;
     font-family: NotoKufiArabic-Regular;
@@ -514,7 +530,8 @@ nav#navBar {
       margin: 0px 20px; }
       #fronts #carouselExampleControls .carousel-item .item img {
         width: 100%;
-        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.25); }
+        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.25);
+        margin-bottom: 30px; }
       @media (max-width: 768px) {
         #fronts #carouselExampleControls .carousel-item .item {
           width: 50%;
@@ -658,8 +675,12 @@ nav#navBar {
       color: white;
       margin-left: 25px;
       margin-right: 25px; }
-      #contact-us .social i.fab:hover, #contact-us .social i.fab:active, #contact-us .social i.fab:focus {
-        color: #1bc5ff; }
+    #contact-us .social i.fa-instagram:hover, #contact-us .social i.fa-instagram:active, #contact-us .social i.fa-instagram:focus {
+      color: #e4405f; }
+    #contact-us .social i.fa-facebook-f:hover, #contact-us .social i.fa-facebook-f:active, #contact-us .social i.fa-facebook-f:focus {
+      color: #3b5999; }
+    #contact-us .social i.fa-twitter:hover, #contact-us .social i.fa-twitter:active, #contact-us .social i.fa-twitter:focus {
+      color: #55acee; }
   #contact-us .contact-us-form {
     width: 40%;
     margin-left: auto;
@@ -679,6 +700,9 @@ nav#navBar {
       padding: 35px 40px; }
       #contact-us .contact-us-form .custom-form-control:hover, #contact-us .contact-us-form .custom-form-control:focus, #contact-us .contact-us-form .custom-form-control:active, #contact-us .contact-us-form .custom-texterea-control:hover, #contact-us .contact-us-form .custom-texterea-control:focus, #contact-us .contact-us-form .custom-texterea-control:active {
         box-shadow: none; }
+      @media (max-width: 575px) {
+        #contact-us .contact-us-form .custom-form-control, #contact-us .contact-us-form .custom-texterea-control {
+          padding: 20px; } }
     #contact-us .contact-us-form .custom-texterea-control {
       border-bottom-right-radius: 10px;
       border-bottom-left-radius: 10px;
