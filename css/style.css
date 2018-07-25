@@ -24,10 +24,10 @@ body {
 nav#navBar {
   padding: 80px 0 0 0;
   transition: all 0.5s ease-in; }
-  @media (max-width: 1200px) {
+  @media (max-width: 1500px) {
     nav#navBar {
       padding: 40px 0 0 0; } }
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     nav#navBar {
       padding: 20px 0 0 0; } }
   nav#navBar .navagation {
@@ -38,10 +38,10 @@ nav#navBar {
     padding: 0 151px 36px 182px; }
     @media (max-width: 1500px) {
       nav#navBar .navagation {
-        padding: 0 90px 36px 120px; } }
-    @media (max-width: 1250px) {
+        padding: 0 90px 36px 90px; } }
+    @media (max-width: 1200px) {
       nav#navBar .navagation {
-        padding: 0 40px 25px 70px; } }
+        padding: 0 40px 25px 40px; } }
     @media (max-width: 991px) {
       nav#navBar .navagation {
         padding-left: 30px;
@@ -91,11 +91,11 @@ nav#navBar {
       @media (max-width: 991px) {
         nav#navBar a.nav-link:hover:before, nav#navBar a.nav-link:focus:before, nav#navBar a.nav-link:active:before {
           bottom: 0; } }
-    @media (max-width: 1250px) {
+    @media (max-width: 1500px) {
       nav#navBar a.nav-link {
         padding: 3px 10px;
         margin: 0 5px;
-        font-size: 16px; } }
+        font-size: 13px; } }
     @media (max-width: 992px) {
       nav#navBar a.nav-link {
         margin-bottom: 10px; } }
@@ -124,6 +124,10 @@ nav#navBar {
     margin: 0; }
     nav#navBar a.navbar-brand img {
       width: 100%; }
+    @media (max-width: 1500px) {
+      nav#navBar a.navbar-brand {
+        width: 160px;
+        padding-top: 15px; } }
     @media (max-width: 992px) {
       nav#navBar a.navbar-brand {
         width: 180px;
@@ -185,7 +189,7 @@ nav#navBar {
       #header .overlay .header .photo .mobile-slider {
         margin-right: 35.7%; }
         #header .overlay .header .photo .mobile-slider img {
-          max-width: 100%; }
+          max-width: 75%; }
         @media (max-width: 1250px) {
           #header .overlay .header .photo .mobile-slider {
             text-align: center;
@@ -255,6 +259,9 @@ nav#navBar {
           @media (max-width: 768px) {
             #header .overlay .header .header-paragraph .page-head-text .play-store {
               margin-bottom: 45px; } }
+          @media (max-width: 576px) {
+            #header .overlay .header .header-paragraph .page-head-text .play-store {
+              margin-bottom: 20px; } }
         #header .overlay .header .header-paragraph .page-head-text .on-button {
           margin-right: 18px;
           margin-left: 167px; }
@@ -263,6 +270,9 @@ nav#navBar {
               width: 100%;
               margin-right: auto;
               margin-left: auto; } }
+          @media (max-width: 576px) {
+            #header .overlay .header .header-paragraph .page-head-text .on-button .on-off {
+              margin-bottom: 50px; } }
           @media (max-width: 1250px) {
             #header .overlay .header .header-paragraph .page-head-text .on-button {
               margin-left: 18px; } }
@@ -300,6 +310,9 @@ nav#navBar {
                 #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fab {
                   font-size: 34px;
                   font-weight: normal; }
+                  @media (max-width: 576px) {
+                    #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fab {
+                      margin-top: 50px; } }
                 #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-instagram:hover, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-instagram:active, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-instagram:focus {
                   color: #e4405f; }
                 #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-facebook-f:hover, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-facebook-f:active, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-facebook-f:focus {
@@ -331,6 +344,9 @@ nav#navBar {
     @media (max-width: 992px) {
       #about .paragraph {
         padding-top: 60px; } }
+    @media (max-width: 576px) {
+      #about .paragraph {
+        padding-top: 20px; } }
     #about .paragraph p {
       padding-top: 25px;
       font-size: 35px;
@@ -635,13 +651,16 @@ nav#navBar {
       width: 100%; }
     @media (max-width: 992px) {
       #download .Group3104 {
-        width: 80%; } }
+        width: 45%; } }
   #download h1 {
     font-size: 40px;
     line-height: 76px;
     color: #41434F;
     font-family: NotoKufiArabic-Regular;
     margin-bottom: 33px; }
+  #download .google, #download .apple {
+    padding-left: 21px;
+    padding-right: 21px; }
   #download .play-store img {
     margin-bottom: 30px;
     border-radius: 12px; }
