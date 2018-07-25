@@ -24,10 +24,10 @@ body {
 nav#navBar {
   padding: 80px 0 0 0;
   transition: all 0.5s ease-in; }
-  @media (max-width: 1500px) {
+  @media (max-width: 1600px) {
     nav#navBar {
-      padding: 40px 0 0 0; } }
-  @media (max-width: 1200px) {
+      padding: 67px 0 0 0; } }
+  @media (max-width: 992px) {
     nav#navBar {
       padding: 20px 0 0 0; } }
   nav#navBar .navagation {
@@ -35,14 +35,14 @@ nav#navBar {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 0 151px 36px 182px; }
-    @media (max-width: 1500px) {
+    padding: 0 151px 0 182px; }
+    @media (max-width: 1600px) {
       nav#navBar .navagation {
-        padding: 0 90px 36px 90px; } }
+        padding: 0 123px 0 145px; } }
     @media (max-width: 1200px) {
       nav#navBar .navagation {
-        padding: 0 40px 25px 40px; } }
-    @media (max-width: 991px) {
+        padding: 0 60px 0 60px; } }
+    @media (max-width: 991.5px) {
       nav#navBar .navagation {
         padding-left: 30px;
         padding-right: 30px; }
@@ -51,7 +51,8 @@ nav#navBar {
           background: #3e66e6;
           box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
           margin-top: 70px;
-          margin-right: 15px; } }
+          padding-right: 15px;
+          padding-left: 15px; } }
     @media (max-width: 552px) {
       nav#navBar .navagation {
         padding-left: 15px;
@@ -71,7 +72,7 @@ nav#navBar {
           border: 1px solid #3e66e6; }
   nav#navBar li {
     margin-bottom: 25px; }
-    @media (max-width: 991px) {
+    @media (max-width: 1600px) {
       nav#navBar li {
         margin-bottom: 15px; } }
   nav#navBar a.nav-link {
@@ -88,19 +89,21 @@ nav#navBar {
       height: 3px;
       background-color: white;
       bottom: -8px; }
+      @media (max-width: 1600px) {
+        nav#navBar a.nav-link:hover:before, nav#navBar a.nav-link:focus:before, nav#navBar a.nav-link:active:before {
+          width: 35px;
+          height: 2px;
+          bottom: 0; } }
       @media (max-width: 991px) {
         nav#navBar a.nav-link:hover:before, nav#navBar a.nav-link:focus:before, nav#navBar a.nav-link:active:before {
           bottom: 0; } }
-    @media (max-width: 1500px) {
+    @media (max-width: 1600px) {
       nav#navBar a.nav-link {
-        padding: 3px 10px;
-        margin: 0 5px;
-        font-size: 13px; } }
-    @media (max-width: 992px) {
-      nav#navBar a.nav-link {
+        padding: 3px 12px;
+        margin: 0 10px;
+        font-size: 15px;
         margin-bottom: 10px; } }
   nav#navBar a.download-link {
-    margin-right: 23px;
     background-color: #1bc5ff;
     border-radius: 30px;
     padding-left: 25px;
@@ -111,12 +114,15 @@ nav#navBar {
     nav#navBar a.download-link:hover, nav#navBar a.download-link:focus, nav#navBar a.download-link:active {
       color: #3e66e6;
       box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
-    @media (max-width: 1040px) {
+    @media (max-width: 1600px) {
       nav#navBar a.download-link {
-        margin-right: 10px; } }
-    @media (max-width: 992px) {
+        padding-left: 20px;
+        padding-right: 20px; } }
+    @media (max-width: 991px) {
       nav#navBar a.download-link {
-        color: white; } }
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%; } }
   nav#navBar a.navbar-brand {
     float: left;
     width: 240px;
@@ -124,10 +130,12 @@ nav#navBar {
     margin: 0; }
     nav#navBar a.navbar-brand img {
       width: 100%; }
-    @media (max-width: 1500px) {
+    @media (max-width: 1600px) {
       nav#navBar a.navbar-brand {
-        width: 160px;
-        padding-top: 15px; } }
+        width: 188px; } }
+    @media (max-width: 1200px) {
+      nav#navBar a.navbar-brand {
+        width: 140px; } }
     @media (max-width: 992px) {
       nav#navBar a.navbar-brand {
         width: 180px;
@@ -144,8 +152,10 @@ nav#navBar {
       height: 3px;
       background-color: white;
       bottom: -8px; }
-      @media (max-width: 991px) {
+      @media (max-width: 1600px) {
         nav#navBar a.nav-link.scroll.active:before {
+          width: 35px;
+          height: 2px;
           bottom: 0; } }
   nav#navBar a.download-link.scroll.active:hover, nav#navBar a.download-link.scroll.active:focus, nav#navBar a.download-link.scroll.active:active {
     color: #1bc5ff; }
@@ -154,8 +164,8 @@ nav#navBar {
   background: #2574F2;
   padding: 0; }
   #navBar.noTransparrent .navagation {
-    padding-bottom: 15px;
-    padding-top: 10px; }
+    padding-bottom: 20px;
+    padding-top: 25px; }
     #navBar.noTransparrent .navagation li {
       margin-bottom: 0px; }
     #navBar.noTransparrent .navagation a.navbar-brand img {
@@ -175,40 +185,60 @@ nav#navBar {
     padding-top: 224px;
     min-height: 100%;
     min-width: 100%; }
+    @media (max-width: 1600px) {
+      #header .overlay {
+        padding-top: 178px; } }
     @media (max-width: 992px) {
       #header .overlay {
         padding-top: 150px; } }
     #header .overlay .header .photo {
       flex: 0 0 47.6%; }
-      @media (max-width: 576px) {
-        #header .overlay .header .photo {
-          flex: 0 0 100%;
-          max-width: 75%;
-          margin-left: auto;
-          margin-right: auto; } }
       #header .overlay .header .photo .mobile-slider {
         margin-right: 35.7%; }
         #header .overlay .header .photo .mobile-slider img {
-          max-width: 75%; }
-        @media (max-width: 1250px) {
+          width: 75%; }
+      @media (max-width: 1600px) {
+        #header .overlay .header .photo .mobile-slider {
+          margin-right: 37.5%; }
+          #header .overlay .header .photo .mobile-slider img {
+            width: 66%; } }
+      @media (max-width: 992px) {
+        #header .overlay .header .photo .mobile-slider {
+          margin-right: auto;
+          margin-right: auto;
+          width: 90%; }
+          #header .overlay .header .photo .mobile-slider img {
+            width: 100%; } }
+      @media (max-width: 577px) {
+        #header .overlay .header .photo {
+          flex: 0 0 100%; }
           #header .overlay .header .photo .mobile-slider {
-            text-align: center;
-            margin-right: auto; } }
+            margin-right: auto;
+            margin-left: auto;
+            width: 65%; }
+            #header .overlay .header .photo .mobile-slider img {
+              width: 100%; } }
     #header .overlay .header .header-paragraph {
       flex: 0 0 52.4%;
-      max-width: 52.4%; }
+      width: 52.4%; }
+      @media (max-width: 1600px) {
+        #header .overlay .header .header-paragraph {
+          padding-right: 0; } }
       @media (max-width: 992px) {
         #header .overlay .header .header-paragraph {
           flex: 0 0 50%;
-          max-width: 50%; } }
+          width: 50%; } }
       @media (max-width: 576px) {
         #header .overlay .header .header-paragraph {
           flex: 0 0 100%;
-          max-width: 100%;
+          width: 100%;
           margin-left: auto;
           margin-right: auto; } }
       #header .overlay .header .header-paragraph .page-head-text {
         margin-top: 37px; }
+        @media (max-width: 1600px) {
+          #header .overlay .header .header-paragraph .page-head-text {
+            margin-top: 34px; } }
         #header .overlay .header .header-paragraph .page-head-text h1.majara {
           font-size: 30px;
           line-height: 56px;
@@ -217,10 +247,25 @@ nav#navBar {
             line-height: 76px;
             font-size: 40px;
             font-weight: NotoKufiArabic-Regular; }
+          @media (max-width: 1600px) {
+            #header .overlay .header .header-paragraph .page-head-text h1.majara {
+              margin-top: 0;
+              font-size: 24px;
+              line-height: 36px;
+              padding-right: 15px; }
+              #header .overlay .header .header-paragraph .page-head-text h1.majara span.dash {
+                line-height: 36px;
+                font-size: 24px; } }
         #header .overlay .header .header-paragraph .page-head-text h2 {
           font-size: 40px;
           line-height: 60px;
           margin-top: 1px; }
+          @media (max-width: 1600px) {
+            #header .overlay .header .header-paragraph .page-head-text h2 {
+              font-size: 32px;
+              line-height: 34px;
+              margin-top: 16px;
+              padding-right: 15px; } }
           @media (max-width: 992px) {
             #header .overlay .header .header-paragraph .page-head-text h2 {
               font-size: 30px;
@@ -234,10 +279,20 @@ nav#navBar {
           line-height: 56px;
           margin-top: 74px;
           margin-bottom: 27px; }
+          @media (max-width: 1600px) {
+            #header .overlay .header .header-paragraph .page-head-text h4 {
+              font-size: 24px;
+              line-height: 30px;
+              margin-top: 68px;
+              margin-bottom: 27px;
+              padding-right: 8px; } }
         #header .overlay .header .header-paragraph .page-head-text h1, #header .overlay .header .header-paragraph .page-head-text h2, #header .overlay .header .header-paragraph .page-head-text h4 {
           color: white; }
         #header .overlay .header .header-paragraph .page-head-text h1, #header .overlay .header .header-paragraph .page-head-text h2 {
           margin-right: 13px; }
+          @media (max-width: 1600px) {
+            #header .overlay .header .header-paragraph .page-head-text h1, #header .overlay .header .header-paragraph .page-head-text h2 {
+              margin-right: 8px; } }
         #header .overlay .header .header-paragraph .page-head-text h2, #header .overlay .header .header-paragraph .page-head-text h4 {
           font-family: NotoKufiArabic-Regular; }
         #header .overlay .header .header-paragraph .page-head-text .play-store {
@@ -250,6 +305,13 @@ nav#navBar {
               box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
           #header .overlay .header .header-paragraph .page-head-text .play-store.google {
             margin-left: 25px; }
+          @media (max-width: 1600px) {
+            #header .overlay .header .header-paragraph .page-head-text .play-store {
+              width: 190px;
+              padding-right: 11px;
+              margin-bottom: 93px; }
+              #header .overlay .header .header-paragraph .page-head-text .play-store.google {
+                margin-left: 11px; } }
           @media (max-width: 992px) {
             #header .overlay .header .header-paragraph .page-head-text .play-store {
               margin-bottom: 60px;
@@ -265,6 +327,12 @@ nav#navBar {
         #header .overlay .header .header-paragraph .page-head-text .on-button {
           margin-right: 18px;
           margin-left: 167px; }
+          @media (max-width: 1600px) {
+            #header .overlay .header .header-paragraph .page-head-text .on-button {
+              padding-right: 8px;
+              margin-left: 92px; }
+              #header .overlay .header .header-paragraph .page-head-text .on-button .on-off img {
+                width: 25px; } }
           @media (max-width: 600px) {
             #header .overlay .header .header-paragraph .page-head-text .on-button .on-off {
               width: 100%;
@@ -286,6 +354,9 @@ nav#navBar {
           #header .overlay .header .header-paragraph .page-head-text .on-button .social {
             margin-right: auto;
             margin-top: 20px; }
+            @media (max-width: 1600px) {
+              #header .overlay .header .header-paragraph .page-head-text .on-button .social {
+                margin-top: 18px; } }
             @media (max-width: 600px) {
               #header .overlay .header .header-paragraph .page-head-text .on-button .social {
                 margin-left: auto; } }
@@ -293,6 +364,9 @@ nav#navBar {
               margin-bottom: 0; }
               #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.facebook {
                 margin-left: 80px; }
+                @media (max-width: 1600px) {
+                  #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.facebook {
+                    margin-left: 62px; } }
                 @media (max-width: 992px) {
                   #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.facebook {
                     margin-left: 50px; } }
@@ -304,12 +378,15 @@ nav#navBar {
                     margin-left: 60px; } }
               #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a {
                 color: white; }
-                @media (max-width: 576px) {
+                @media (max-width: 575.5px) {
                   #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a {
                     color: #2574F2; } }
                 #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fab {
                   font-size: 34px;
                   font-weight: normal; }
+                  @media (max-width: 1600px) {
+                    #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fab {
+                      font-size: 27px; } }
                   @media (max-width: 576px) {
                     #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fab {
                       margin-top: 50px; } }
@@ -322,6 +399,9 @@ nav#navBar {
 
 #about {
   padding: 185px 10px 215px; }
+  @media (max-width: 1600px) {
+    #about {
+      padding: 140px 115px; } }
   @media (max-width: 992px) {
     #about {
       padding-top: 100px;
@@ -338,6 +418,11 @@ nav#navBar {
       width: 119.6px; }
       #about .paragraph .about-logo img {
         width: 100%; }
+    @media (max-width: 1600px) {
+      #about .paragraph {
+        padding-top: 140px; }
+        #about .paragraph .about-logo {
+          width: 94px; } }
     @media (max-width: 1320px) {
       #about .paragraph {
         padding-right: 15px; } }
@@ -353,6 +438,11 @@ nav#navBar {
       line-height: 51px;
       font-family: NotoKufiArabic-Regular;
       color: #41434F; }
+      @media (max-width: 1600px) {
+        #about .paragraph p {
+          padding-top: 23px;
+          font-size: 28px;
+          line-height: 40px; } }
       @media (max-width: 1240px) {
         #about .paragraph p {
           font-size: 24px; } }
@@ -363,10 +453,10 @@ nav#navBar {
         #about .paragraph p {
           font-size: 20px; } }
   #about .photo {
-    padding-right: 70px;
-    padding-left: 0; }
+    padding-right: 155px;
+    padding-left: 70px; }
     #about .photo img {
-      width: 524px; }
+      width: 100%; }
     @media (max-width: 1250px) {
       #about .photo img {
         width: 100%; } }
@@ -730,7 +820,8 @@ nav#navBar {
       border: 1px solid #E2E2ED; }
       #contact-us .contact-us-form .custom-form-control:hover, #contact-us .contact-us-form .custom-form-control:focus, #contact-us .contact-us-form .custom-form-control:active, #contact-us .contact-us-form .custom-texterea-control:hover, #contact-us .contact-us-form .custom-texterea-control:focus, #contact-us .contact-us-form .custom-texterea-control:active {
         box-shadow: none;
-        outline: none; }
+        outline: none;
+        background: #f2f2f7; }
       @media (max-width: 575px) {
         #contact-us .contact-us-form .custom-form-control, #contact-us .contact-us-form .custom-texterea-control {
           padding: 20px; } }
@@ -741,7 +832,17 @@ nav#navBar {
     #contact-us .contact-us-form #cname, #contact-us .contact-us-form #subject, #contact-us .contact-us-form #massage, #contact-us .contact-us-form #cnumber {
       padding-left: 0;
       padding-right: 0;
-      margin: 0; }
+      margin: 0;
+      position: relative; }
+      #contact-us .contact-us-form #cname #name-error, #contact-us .contact-us-form #cname #mobile-number-error, #contact-us .contact-us-form #cname #subject-error, #contact-us .contact-us-form #cname #massage-error, #contact-us .contact-us-form #subject #name-error, #contact-us .contact-us-form #subject #mobile-number-error, #contact-us .contact-us-form #subject #subject-error, #contact-us .contact-us-form #subject #massage-error, #contact-us .contact-us-form #massage #name-error, #contact-us .contact-us-form #massage #mobile-number-error, #contact-us .contact-us-form #massage #subject-error, #contact-us .contact-us-form #massage #massage-error, #contact-us .contact-us-form #cnumber #name-error, #contact-us .contact-us-form #cnumber #mobile-number-error, #contact-us .contact-us-form #cnumber #subject-error, #contact-us .contact-us-form #cnumber #massage-error {
+        color: red;
+        z-index: 10;
+        bottom: 2px;
+        position: absolute;
+        margin-bottom: 0; }
+        @media (max-width: 992px) {
+          #contact-us .contact-us-form #cname #name-error, #contact-us .contact-us-form #cname #mobile-number-error, #contact-us .contact-us-form #cname #subject-error, #contact-us .contact-us-form #cname #massage-error, #contact-us .contact-us-form #subject #name-error, #contact-us .contact-us-form #subject #mobile-number-error, #contact-us .contact-us-form #subject #subject-error, #contact-us .contact-us-form #subject #massage-error, #contact-us .contact-us-form #massage #name-error, #contact-us .contact-us-form #massage #mobile-number-error, #contact-us .contact-us-form #massage #subject-error, #contact-us .contact-us-form #massage #massage-error, #contact-us .contact-us-form #cnumber #name-error, #contact-us .contact-us-form #cnumber #mobile-number-error, #contact-us .contact-us-form #cnumber #subject-error, #contact-us .contact-us-form #cnumber #massage-error {
+            font-size: 12px; } }
     #contact-us .contact-us-form .cname {
       border-top-right-radius: 10px;
       border: 1px solid #EEF7FA; }
