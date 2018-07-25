@@ -49,7 +49,7 @@ nav#navBar {
         nav#navBar .navagation #navbarTogglerDemo01 {
           position: absolute;
           background: #3e66e6;
-          box-shadow: 0 0 3px 1px #3d3d3c;
+          box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
           margin-top: 70px;
           margin-right: 15px; } }
     @media (max-width: 552px) {
@@ -465,6 +465,9 @@ nav#navBar {
       @media (max-width: 1200px) {
         #gift .paragraph p {
           font-size: 22px; } }
+      @media (max-width: 576px) {
+        #gift .paragraph p {
+          font-size: 20px; } }
   #gift .photo {
     padding-right: 125px; }
     #gift .photo img {
@@ -638,6 +641,10 @@ nav#navBar {
 #download {
   padding-top: 270px;
   padding-bottom: 270px; }
+  @media (max-width: 1200px) {
+    #download {
+      padding-top: 150px;
+      padding-bottom: 150px; } }
   @media (max-width: 992px) {
     #download {
       padding-top: 50px;
@@ -667,6 +674,13 @@ nav#navBar {
     #download .play-store img:hover, #download .play-store img:active, #download .play-store img:focus {
       box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
     @media (max-width: 768px) {
+      #download .play-store img {
+        width: 100%; } }
+  @media (max-width: 576px) {
+    #download .play-store {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; }
       #download .play-store img {
         width: 100%; } }
 
@@ -712,9 +726,11 @@ nav#navBar {
       font-family: NotoKufiArabic-Regular;
       color: #B2B2B2;
       padding-right: 30px;
-      padding: 35px 40px; }
+      padding: 35px 40px;
+      border: 1px solid #E2E2ED; }
       #contact-us .contact-us-form .custom-form-control:hover, #contact-us .contact-us-form .custom-form-control:focus, #contact-us .contact-us-form .custom-form-control:active, #contact-us .contact-us-form .custom-texterea-control:hover, #contact-us .contact-us-form .custom-texterea-control:focus, #contact-us .contact-us-form .custom-texterea-control:active {
-        box-shadow: none; }
+        box-shadow: none;
+        outline: none; }
       @media (max-width: 575px) {
         #contact-us .contact-us-form .custom-form-control, #contact-us .contact-us-form .custom-texterea-control {
           padding: 20px; } }
@@ -722,10 +738,8 @@ nav#navBar {
       border-bottom-right-radius: 10px;
       border-bottom-left-radius: 10px;
       padding-top: 25px; }
-    #contact-us .contact-us-form #cname, #contact-us .contact-us-form #subject, #contact-us .contact-us-form #massage {
+    #contact-us .contact-us-form #cname, #contact-us .contact-us-form #subject, #contact-us .contact-us-form #massage, #contact-us .contact-us-form #cnumber {
       padding-left: 0;
-      margin: 0; }
-    #contact-us .contact-us-form #cnumber, #contact-us .contact-us-form #subject, #contact-us .contact-us-form #massage {
       padding-right: 0;
       margin: 0; }
     #contact-us .contact-us-form .cname {
@@ -748,10 +762,6 @@ nav#navBar {
         box-shadow: none;
         padding: 8px 78px; }
     @media (max-width: 575px) {
-      #contact-us .contact-us-form #cname {
-        padding-left: 5px; }
-      #contact-us .contact-us-form #cnumber {
-        padding-right: 5px; }
       #contact-us .contact-us-form .cname {
         border-top-right-radius: 10px;
         border-top-left-radius: 10px; }
