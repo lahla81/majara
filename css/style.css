@@ -156,14 +156,14 @@ nav#navBar {
           height: 2px;
           bottom: 0; } }
   nav#navBar a.download-link.scroll.active:hover, nav#navBar a.download-link.scroll.active:focus, nav#navBar a.download-link.scroll.active:active {
-    color: #1bc5ff; }
+    color: white; }
 
 #navBar.noTransparrent {
   background: #2574F2;
   padding: 0; }
   #navBar.noTransparrent .navagation {
-    padding-bottom: 20px;
-    padding-top: 25px; }
+    padding-bottom: 10px;
+    padding-top: 15px; }
     #navBar.noTransparrent .navagation li {
       margin-bottom: 0px; }
     #navBar.noTransparrent .navagation a.navbar-brand img {
@@ -204,16 +204,14 @@ nav#navBar {
       @media (max-width: 992px) {
         #header .overlay .header .photo .mobile-slider {
           margin-right: auto;
-          margin-right: auto;
-          width: 90%; }
+          margin-left: auto;
+          width: 70%; }
           #header .overlay .header .photo .mobile-slider img {
             width: 100%; } }
       @media (max-width: 577px) {
         #header .overlay .header .photo {
           flex: 0 0 100%; }
           #header .overlay .header .photo .mobile-slider {
-            margin-right: auto;
-            margin-left: auto;
             width: 65%; }
             #header .overlay .header .photo .mobile-slider img {
               width: 100%; } }
@@ -409,7 +407,7 @@ nav#navBar {
       padding: 100px 75px; } }
   @media (max-width: 992px) {
     #about {
-      padding: 60px 50px; } }
+      padding: 85px 50px; } }
   @media (max-width: 768px) {
     #about {
       padding: 30px; } }
@@ -803,8 +801,8 @@ nav#navBar {
       padding-bottom: 150px; } }
   @media (max-width: 992px) {
     #download {
-      padding-top: 50px;
-      padding-bottom: 50px; } }
+      padding-top: 100px;
+      padding-bottom: 80px; } }
   #download .Group3104 {
     width: 262px;
     margin-right: auto;
