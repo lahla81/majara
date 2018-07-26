@@ -943,10 +943,8 @@ nav#navBar {
       padding-right: 0;
       margin: 0; }
       #contact-us .contact-us-form #cname #name-error, #contact-us .contact-us-form #cname #mobile-number-error, #contact-us .contact-us-form #cname #subject-error, #contact-us .contact-us-form #cname #massage-error, #contact-us .contact-us-form #subject #name-error, #contact-us .contact-us-form #subject #mobile-number-error, #contact-us .contact-us-form #subject #subject-error, #contact-us .contact-us-form #subject #massage-error, #contact-us .contact-us-form #massage #name-error, #contact-us .contact-us-form #massage #mobile-number-error, #contact-us .contact-us-form #massage #subject-error, #contact-us .contact-us-form #massage #massage-error, #contact-us .contact-us-form #cnumber #name-error, #contact-us .contact-us-form #cnumber #mobile-number-error, #contact-us .contact-us-form #cnumber #subject-error, #contact-us .contact-us-form #cnumber #massage-error {
-        color: red; }
-        @media (max-width: 992px) {
-          #contact-us .contact-us-form #cname #name-error, #contact-us .contact-us-form #cname #mobile-number-error, #contact-us .contact-us-form #cname #subject-error, #contact-us .contact-us-form #cname #massage-error, #contact-us .contact-us-form #subject #name-error, #contact-us .contact-us-form #subject #mobile-number-error, #contact-us .contact-us-form #subject #subject-error, #contact-us .contact-us-form #subject #massage-error, #contact-us .contact-us-form #massage #name-error, #contact-us .contact-us-form #massage #mobile-number-error, #contact-us .contact-us-form #massage #subject-error, #contact-us .contact-us-form #massage #massage-error, #contact-us .contact-us-form #cnumber #name-error, #contact-us .contact-us-form #cnumber #mobile-number-error, #contact-us .contact-us-form #cnumber #subject-error, #contact-us .contact-us-form #cnumber #massage-error {
-            font-size: 12px; } }
+        color: red;
+        font-size: 12px; }
     #contact-us .contact-us-form .cname {
       border-top-right-radius: 10px; }
     #contact-us .contact-us-form .cnumber {
@@ -988,11 +986,10 @@ nav#navBar {
         padding: 15px 30px; } }
     @media (max-width: 1200px) {
       #contact-us .contact-us-form {
-        width: 60%; } }
+        width: 70%; } }
     @media (max-width: 992px) {
       #contact-us .contact-us-form {
-        padding: 10px 10px;
-        width: 70%; } }
+        padding: 10px 10px; } }
     @media (max-width: 768px) {
       #contact-us .contact-us-form {
         width: 95%; } }
