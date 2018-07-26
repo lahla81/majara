@@ -455,6 +455,9 @@ nav#navBar {
       @media (max-width: 992px) {
         #about .paragraph p {
           font-size: 16px; } }
+      @media (max-width: 576px) {
+        #about .paragraph p {
+          font-size: 20px; } }
   #about .photo {
     padding-right: 155px;
     padding-left: 70px; }
@@ -478,7 +481,7 @@ nav#navBar {
   background: rgba(27, 197, 255, 0.05); }
   @media (max-width: 1600px) {
     #feature {
-      padding: 150px 85px; } }
+      padding: 159px 85px; } }
   @media (max-width: 992px) {
     #feature {
       padding: 100px 40px; } }
@@ -489,12 +492,21 @@ nav#navBar {
     font-size: 40px;
     line-height: 76px;
     margin-bottom: 0; }
+    @media (max-width: 1600px) {
+      #feature h1 {
+        font-size: 32px;
+        line-height: 54px; } }
   #feature h2 {
     color: #141414;
     font-family: NotoKufiArabic-Regular;
     font-size: 40px;
     line-height: 76px;
     margin-bottom: 63px; }
+    @media (max-width: 1600px) {
+      #feature h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 44px; } }
   #feature .features {
     padding: 58px 20px 37px;
     box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.11);
@@ -502,37 +514,51 @@ nav#navBar {
     margin: 14px; }
     #feature .features img {
       margin-bottom: 30px; }
+    @media (max-width: 1600px) {
+      #feature .features {
+        padding: 47px 20px 30px;
+        margin: 12px; }
+        #feature .features img {
+          margin-bottom: 20px; } }
+    @media (max-width: 400px) {
+      #feature .features {
+        padding: 35px 15px 25px; } }
     #feature .features h4 {
       font-size: 27px;
       line-height: 52px;
       font-family: NotoKufiArabic-Regular;
       color: #2574F2;
       margin-bottom: 10px; }
-      @media (max-width: 1556px) and (min-width: 1200px) {
+      @media (max-width: 1600px) {
         #feature .features h4 {
-          font-size: 17px; } }
+          font-size: 22px;
+          line-height: 40px; } }
+      @media (max-width: 1292px) and (min-width: 1200px) {
+        #feature .features h4 {
+          font-size: 18px; } }
     #feature .features p {
       font-size: 20px;
       line-height: 31px;
       color: #B2B2B2;
       font-family: NotoKufiArabic-Regular;
       margin-bottom: 20px; }
-      @media (max-width: 1829px) and (min-width: 1713px) {
+      @media (max-width: 1600px) {
         #feature .features p {
-          font-size: 18px; } }
-      @media (max-width: 1556px) and (min-width: 1200px) {
+          font-size: 16px;
+          line-height: 25px; } }
+      @media (max-width: 1495px) and (min-width: 1401px) {
         #feature .features p {
           font-size: 14px; } }
-      @media (max-width: 1428px) and (min-width: 1348px) {
-        #feature .features p {
-          font-size: 12px; } }
 
 #gift {
   padding-top: 216px;
   padding-bottom: 220px; }
   @media (max-width: 1600px) {
     #gift {
-      padding: 140px 115px; } }
+      padding: 140px 145px 140px 115px; } }
+  @media (max-width: 1200px) {
+    #gift {
+      padding: 100px 20px; } }
   @media (max-width: 992px) {
     #gift {
       padding-top: 80px;
@@ -543,6 +569,13 @@ nav#navBar {
     flex-direction: column;
     justify-content: center;
     padding-right: 60px; }
+    @media (max-width: 1600px) {
+      #gift .paragraph {
+        padding-right: 30px; } }
+    @media (max-width: 992px) {
+      #gift .paragraph {
+        padding-right: 10px;
+        padding-left: 10px; } }
     @media (max-width: 552px) {
       #gift .paragraph {
         padding-right: 15px; } }
@@ -555,6 +588,10 @@ nav#navBar {
         #gift .paragraph h1 {
           font-size: 32px;
           line-height: 46px; } }
+      @media (max-width: 992px) {
+        #gift .paragraph h1 {
+          font-size: 26px;
+          line-height: 36px; } }
     #gift .paragraph p {
       padding-top: 10px;
       font-size: 35px;
@@ -567,7 +604,12 @@ nav#navBar {
           line-height: 40px; } }
       @media (max-width: 1200px) {
         #gift .paragraph p {
-          font-size: 22px; } }
+          font-size: 22px;
+          line-height: 32px; } }
+      @media (max-width: 992px) {
+        #gift .paragraph p {
+          font-size: 16px;
+          line-height: 28px; } }
       @media (max-width: 576px) {
         #gift .paragraph p {
           font-size: 20px; } }
@@ -580,9 +622,10 @@ nav#navBar {
         padding-right: 80px; } }
     @media (max-width: 992px) {
       #gift .photo {
-        padding-right: 15px; }
+        padding-right: 10px;
+        padding-left: 10px; }
         #gift .photo img {
-          width: 60%; } }
+          width: 80%; } }
 
 #fronts {
   padding-bottom: 137px;
@@ -617,7 +660,7 @@ nav#navBar {
     color: #467dc0;
     font-size: 40px;
     line-height: 76px; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1600px) {
       #fronts h2 {
         font-size: 30px;
         line-height: 55px; } }
@@ -674,9 +717,12 @@ nav#navBar {
         transform: translateX(-50%); }
         #fronts #carouselExampleControls .carousel-item .item.main .carousel-title {
           font-size: 30px;
-          font-weight: NotoKufiArabic-Regular;
           color: #45C1F0;
           line-height: 56px; }
+          @media (max-width: 1600px) {
+            #fronts #carouselExampleControls .carousel-item .item.main .carousel-title {
+              font-size: 22px;
+              line-height: 44px; } }
         @media (max-width: 1200px) {
           #fronts #carouselExampleControls .carousel-item .item.main {
             left: 17%; }
@@ -709,6 +755,11 @@ nav#navBar {
         color: #45C1F0;
         font-size: 18px;
         font-weight: NotoKufiArabic-Regular; }
+      @media (max-width: 1600px) {
+        #fronts #carouselExampleControls .controls .carousel-control-prev,
+        #fronts #carouselExampleControls .controls .carousel-control-next {
+          height: 50px;
+          width: 50px; } }
       @media (max-width: 1200px) {
         #fronts #carouselExampleControls .controls .carousel-control-prev,
         #fronts #carouselExampleControls .controls .carousel-control-next {
@@ -722,7 +773,7 @@ nav#navBar {
     #fronts #carouselExampleControls .controls .carousel-control-prev {
       left: 12%;
       transform: translateX(-50%); }
-      @media (max-width: 1500px) {
+      @media (max-width: 1200px) {
         #fronts #carouselExampleControls .controls .carousel-control-prev {
           left: 10%; } }
       @media (max-width: 992px) {
@@ -731,7 +782,7 @@ nav#navBar {
     #fronts #carouselExampleControls .controls .carousel-control-next {
       right: 74%;
       transform: translateX(50%); }
-      @media (max-width: 1500px) {
+      @media (max-width: 1200px) {
         #fronts #carouselExampleControls .controls .carousel-control-next {
           right: 72%; } }
       @media (max-width: 992px) {
@@ -744,6 +795,10 @@ nav#navBar {
 #download {
   padding-top: 270px;
   padding-bottom: 270px; }
+  @media (max-width: 1600px) {
+    #download {
+      padding-top: 212px;
+      padding-bottom: 180px; } }
   @media (max-width: 1200px) {
     #download {
       padding-top: 150px;
@@ -753,24 +808,36 @@ nav#navBar {
       padding-top: 50px;
       padding-bottom: 50px; } }
   #download .Group3104 {
-    width: 292px;
+    width: 262px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 55px; }
     #download .Group3104 img {
       width: 100%; }
+    @media (max-width: 1600px) {
+      #download .Group3104 {
+        width: 230px;
+        margin-bottom: 46px; } }
     @media (max-width: 992px) {
       #download .Group3104 {
-        width: 45%; } }
+        width: 25%; } }
+    @media (max-width: 768px) {
+      #download .Group3104 {
+        width: 35%; } }
   #download h1 {
     font-size: 40px;
     line-height: 76px;
     color: #41434F;
     font-family: NotoKufiArabic-Regular;
     margin-bottom: 33px; }
+    @media (max-width: 1600px) {
+      #download h1 {
+        font-size: 32px;
+        line-height: 56px;
+        margin-bottom: 28px; } }
   #download .google, #download .apple {
-    padding-left: 21px;
-    padding-right: 21px; }
+    padding-left: 18px;
+    padding-right: 18px; }
   #download .play-store img {
     margin-bottom: 30px;
     border-radius: 12px; }
@@ -781,7 +848,7 @@ nav#navBar {
         width: 100%; } }
   @media (max-width: 576px) {
     #download .play-store {
-      width: 80%;
+      width: 60%;
       margin-left: auto;
       margin-right: auto; }
       #download .play-store img {
@@ -794,12 +861,21 @@ nav#navBar {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat; }
+  @media (max-width: 1600px) {
+    #contact-us {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
   #contact-us h1 {
     color: white;
     font-size: 40px;
     line-height: 76px;
     font-family: NotoKufiArabic-Regular;
     margin-bottom: 31px; }
+    @media (max-width: 1600px) {
+      #contact-us h1 {
+        font-size: 32px;
+        line-height: 60px;
+        margin-bottom: 24px; } }
   #contact-us .social {
     margin-bottom: 61px; }
     #contact-us .social i.fab {
@@ -807,6 +883,13 @@ nav#navBar {
       color: white;
       margin-left: 25px;
       margin-right: 25px; }
+    @media (max-width: 1600px) {
+      #contact-us .social {
+        margin-bottom: 20px; }
+        #contact-us .social i.fab {
+          font-size: 20px;
+          margin-left: 14px;
+          margin-right: 14px; } }
     #contact-us .social i.fa-instagram:hover, #contact-us .social i.fa-instagram:active, #contact-us .social i.fa-instagram:focus {
       color: #e4405f; }
     #contact-us .social i.fa-facebook-f:hover, #contact-us .social i.fa-facebook-f:active, #contact-us .social i.fa-facebook-f:focus {
@@ -814,7 +897,7 @@ nav#navBar {
     #contact-us .social i.fa-twitter:hover, #contact-us .social i.fa-twitter:active, #contact-us .social i.fa-twitter:focus {
       color: #55acee; }
   #contact-us .contact-us-form {
-    width: 40%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto; }
     #contact-us .contact-us-form .form-row {
@@ -827,21 +910,24 @@ nav#navBar {
       font-size: 20px;
       line-height: 38px;
       font-family: NotoKufiArabic-Regular;
-      padding-right: 30px;
       padding: 35px 40px;
-      border: 1px solid #E2E2ED; }
+      border: 1px solid #e4e4ee; }
       #contact-us .contact-us-form .custom-form-control:hover, #contact-us .contact-us-form .custom-form-control:focus, #contact-us .contact-us-form .custom-form-control:active, #contact-us .contact-us-form .custom-texterea-control:hover, #contact-us .contact-us-form .custom-texterea-control:focus, #contact-us .contact-us-form .custom-texterea-control:active {
         box-shadow: none;
         outline: none; }
         #contact-us .contact-us-form .custom-form-control:hover::placeholder, #contact-us .contact-us-form .custom-form-control:focus::placeholder, #contact-us .contact-us-form .custom-form-control:active::placeholder, #contact-us .contact-us-form .custom-texterea-control:hover::placeholder, #contact-us .contact-us-form .custom-texterea-control:focus::placeholder, #contact-us .contact-us-form .custom-texterea-control:active::placeholder {
           color: #B2B2B2; }
+      @media (max-width: 1600px) {
+        #contact-us .contact-us-form .custom-form-control, #contact-us .contact-us-form .custom-texterea-control {
+          font-size: 16px;
+          line-height: 28px;
+          padding: 28px 30px; } }
       @media (max-width: 575px) {
         #contact-us .contact-us-form .custom-form-control, #contact-us .contact-us-form .custom-texterea-control {
           padding: 20px; } }
     #contact-us .contact-us-form .custom-texterea-control {
       border-bottom-right-radius: 10px;
-      border-bottom-left-radius: 10px;
-      padding-top: 25px; }
+      border-bottom-left-radius: 10px; }
     #contact-us .contact-us-form #cname, #contact-us .contact-us-form #subject, #contact-us .contact-us-form #massage, #contact-us .contact-us-form #cnumber {
       padding-left: 0;
       padding-right: 0;
@@ -852,11 +938,9 @@ nav#navBar {
           #contact-us .contact-us-form #cname #name-error, #contact-us .contact-us-form #cname #mobile-number-error, #contact-us .contact-us-form #cname #subject-error, #contact-us .contact-us-form #cname #massage-error, #contact-us .contact-us-form #subject #name-error, #contact-us .contact-us-form #subject #mobile-number-error, #contact-us .contact-us-form #subject #subject-error, #contact-us .contact-us-form #subject #massage-error, #contact-us .contact-us-form #massage #name-error, #contact-us .contact-us-form #massage #mobile-number-error, #contact-us .contact-us-form #massage #subject-error, #contact-us .contact-us-form #massage #massage-error, #contact-us .contact-us-form #cnumber #name-error, #contact-us .contact-us-form #cnumber #mobile-number-error, #contact-us .contact-us-form #cnumber #subject-error, #contact-us .contact-us-form #cnumber #massage-error {
             font-size: 12px; } }
     #contact-us .contact-us-form .cname {
-      border-top-right-radius: 10px;
-      border: 1px solid #EEF7FA; }
+      border-top-right-radius: 10px; }
     #contact-us .contact-us-form .cnumber {
-      border-top-left-radius: 10px;
-      border: 1px solid #EEF7FA; }
+      border-top-left-radius: 10px; }
     #contact-us .contact-us-form button.submit {
       background: #45C1F0;
       font-size: 25px;
@@ -870,6 +954,19 @@ nav#navBar {
       #contact-us .contact-us-form button.submit:hover, #contact-us .contact-us-form button.submit:focus, #contact-us .contact-us-form button.submit:active {
         box-shadow: none;
         padding: 8px 78px; }
+      @media (max-width: 1600px) {
+        #contact-us .contact-us-form button.submit {
+          font-size: 20px;
+          line-height: 32px;
+          margin-top: 55px;
+          padding: 10px 64px;
+          border-radius: 34px; } }
+    @media (max-width: 1600px) {
+      #contact-us .contact-us-form {
+        font-size: 20px;
+        line-height: 32px;
+        padding: 10px 80px;
+        border-radius: 34px; } }
     @media (max-width: 575px) {
       #contact-us .contact-us-form .cname {
         border-top-right-radius: 10px;
@@ -881,9 +978,10 @@ nav#navBar {
     @media (max-width: 1200px) {
       #contact-us .contact-us-form {
         width: 60%; } }
-    @media (max-width: 992) {
+    @media (max-width: 992px) {
       #contact-us .contact-us-form {
-        width: 80%; } }
+        padding: 10px 10px;
+        width: 70%; } }
     @media (max-width: 768px) {
       #contact-us .contact-us-form {
         width: 95%; } }
