@@ -12,6 +12,11 @@ body {
 
 .container-fluid {
   padding: 0; }
+  @media (min-width: 1920px) {
+    .container-fluid {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1920px; } }
 
 .row {
   margin-left: 0;
@@ -24,6 +29,11 @@ body {
 nav#navBar {
   padding: 80px 0 0 0;
   transition: all 0.5s ease-in; }
+  @media (min-width: 1920px) {
+    nav#navBar {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1920px; } }
   @media (max-width: 1600px) {
     nav#navBar {
       padding: 67px 0 0 0; } }
@@ -113,7 +123,6 @@ nav#navBar {
     nav#navBar a.download-link:before {
       display: none; }
     nav#navBar a.download-link:hover, nav#navBar a.download-link:focus, nav#navBar a.download-link:active {
-      color: #3e66e6;
       box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
     @media (max-width: 1600px) {
       nav#navBar a.download-link {
@@ -155,8 +164,8 @@ nav#navBar {
           width: 35px;
           height: 2px;
           bottom: 0; } }
-  nav#navBar a.download-link.scroll.active:hover, nav#navBar a.download-link.scroll.active:focus, nav#navBar a.download-link.scroll.active:active {
-    color: white; }
+  nav#navBar a.download-link.scroll.active {
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
 
 #navBar.noTransparrent {
   background: #2574F2;
@@ -538,6 +547,9 @@ nav#navBar {
       color: #B2B2B2;
       font-family: NotoKufiArabic-Regular;
       margin-bottom: 20px; }
+      @media (max-width: 1830px) and (min-width: 1713px) {
+        #feature .features p {
+          font-size: 18px; } }
       @media (max-width: 1600px) {
         #feature .features p {
           font-size: 16px;
@@ -950,8 +962,7 @@ nav#navBar {
       font-family: NotoKufiArabic-Regular;
       box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
       #contact-us .contact-us-form button.submit:hover, #contact-us .contact-us-form button.submit:focus, #contact-us .contact-us-form button.submit:active {
-        box-shadow: none;
-        padding: 8px 78px; }
+        box-shadow: none; }
       @media (max-width: 1600px) {
         #contact-us .contact-us-form button.submit {
           font-size: 20px;
@@ -960,7 +971,7 @@ nav#navBar {
           padding: 10px 64px;
           border-radius: 34px; }
           #contact-us .contact-us-form button.submit:hover, #contact-us .contact-us-form button.submit:focus, #contact-us .contact-us-form button.submit:active {
-            padding: 9px 62px; } }
+            font-family: NotoKufiArabic-Bold; } }
     @media (max-width: 1600px) {
       #contact-us .contact-us-form {
         font-size: 20px;
