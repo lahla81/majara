@@ -34,11 +34,12 @@ nav#navBar {
     background-color: transparent;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 151px 0 182px; }
     @media (max-width: 1600px) {
       nav#navBar .navagation {
-        padding: 0 123px 0 145px; } }
+        padding: 0 123px 0 145px;
+        justify-content: space-between; } }
     @media (max-width: 1200px) {
       nav#navBar .navagation {
         padding: 0 60px 0 60px; } }
@@ -286,6 +287,9 @@ nav#navBar {
               margin-top: 68px;
               margin-bottom: 27px;
               padding-right: 8px; } }
+          @media (max-width: 575px) {
+            #header .overlay .header .header-paragraph .page-head-text h4 {
+              text-align: center; } }
         #header .overlay .header .header-paragraph .page-head-text h1, #header .overlay .header .header-paragraph .page-head-text h2, #header .overlay .header .header-paragraph .page-head-text h4 {
           color: white; }
         #header .overlay .header .header-paragraph .page-head-text h1, #header .overlay .header .header-paragraph .page-head-text h2 {
@@ -402,16 +406,23 @@ nav#navBar {
   @media (max-width: 1600px) {
     #about {
       padding: 140px 115px; } }
+  @media (max-width: 1200px) {
+    #about {
+      padding: 100px 75px; } }
   @media (max-width: 992px) {
     #about {
-      padding-top: 100px;
-      padding-bottom: 100px; } }
+      padding: 60px 50px; } }
   @media (max-width: 768px) {
     #about {
-      padding-top: 50px;
-      padding-bottom: 50px; } }
+      padding: 30px; } }
+  @media (max-width: 666px) {
+    #about {
+      padding: 20px; } }
   #about .paragraph {
-    padding-top: 130px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-right: 60px;
     padding-left: 0; }
     #about .paragraph .about-logo {
@@ -419,19 +430,11 @@ nav#navBar {
       #about .paragraph .about-logo img {
         width: 100%; }
     @media (max-width: 1600px) {
-      #about .paragraph {
-        padding-top: 140px; }
-        #about .paragraph .about-logo {
-          width: 94px; } }
+      #about .paragraph .about-logo {
+        width: 94px; } }
     @media (max-width: 1320px) {
       #about .paragraph {
         padding-right: 15px; } }
-    @media (max-width: 992px) {
-      #about .paragraph {
-        padding-top: 60px; } }
-    @media (max-width: 576px) {
-      #about .paragraph {
-        padding-top: 20px; } }
     #about .paragraph p {
       padding-top: 25px;
       font-size: 35px;
@@ -449,27 +452,33 @@ nav#navBar {
       @media (max-width: 1070px) {
         #about .paragraph p {
           font-size: 22px; } }
-      @media (max-width: 818px) {
+      @media (max-width: 992px) {
         #about .paragraph p {
-          font-size: 20px; } }
+          font-size: 16px; } }
   #about .photo {
     padding-right: 155px;
     padding-left: 70px; }
     #about .photo img {
       width: 100%; }
-    @media (max-width: 1250px) {
-      #about .photo img {
-        width: 100%; } }
+    @media (max-width: 1260px) {
+      #about .photo {
+        padding-right: 90px;
+        padding-left: 40px; } }
     @media (max-width: 992px) {
       #about .photo {
-        padding-right: 15px; } }
-    @media (max-width: 400px) {
-      #about .photo img {
-        width: 70%; } }
+        padding-right: 50px;
+        padding-left: 50px; } }
+    @media (max-width: 768px) {
+      #about .photo {
+        padding-right: 20px;
+        padding-left: 20px; } }
 
 #feature {
   padding: 194px 111px;
   background: rgba(27, 197, 255, 0.05); }
+  @media (max-width: 1600px) {
+    #feature {
+      padding: 150px 85px; } }
   @media (max-width: 992px) {
     #feature {
       padding: 100px 40px; } }
@@ -521,17 +530,19 @@ nav#navBar {
 #gift {
   padding-top: 216px;
   padding-bottom: 220px; }
+  @media (max-width: 1600px) {
+    #gift {
+      padding: 140px 115px; } }
   @media (max-width: 992px) {
     #gift {
       padding-top: 80px;
       padding-bottom: 80px; } }
   #gift .paragraph {
-    padding-top: 93px;
-    padding-left: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-right: 60px; }
-    @media (max-width: 1200px) {
-      #gift .paragraph {
-        padding-top: 50px; } }
     @media (max-width: 552px) {
       #gift .paragraph {
         padding-right: 15px; } }
@@ -540,18 +551,20 @@ nav#navBar {
       font-size: 40px;
       line-height: 76px;
       font-family: NotoKufiArabic-Regular; }
-      @media (max-width: 1500px) {
+      @media (max-width: 1600px) {
         #gift .paragraph h1 {
-          font-size: 30px; } }
+          font-size: 32px;
+          line-height: 46px; } }
     #gift .paragraph p {
       padding-top: 10px;
       font-size: 35px;
       line-height: 51px;
       font-family: NotoKufiArabic-Regular;
       color: #41434F; }
-      @media (max-width: 1500px) {
+      @media (max-width: 1600px) {
         #gift .paragraph p {
-          font-size: 28px; } }
+          font-size: 28px;
+          line-height: 40px; } }
       @media (max-width: 1200px) {
         #gift .paragraph p {
           font-size: 22px; } }
@@ -562,9 +575,9 @@ nav#navBar {
     padding-right: 125px; }
     #gift .photo img {
       width: 85%; }
-    @media (max-width: 1500px) and (min-width: 993px) {
+    @media (max-width: 1600px) {
       #gift .photo {
-        padding-right: 50px; } }
+        padding-right: 80px; } }
     @media (max-width: 992px) {
       #gift .photo {
         padding-right: 15px; }
@@ -814,14 +827,14 @@ nav#navBar {
       font-size: 20px;
       line-height: 38px;
       font-family: NotoKufiArabic-Regular;
-      color: #B2B2B2;
       padding-right: 30px;
       padding: 35px 40px;
       border: 1px solid #E2E2ED; }
       #contact-us .contact-us-form .custom-form-control:hover, #contact-us .contact-us-form .custom-form-control:focus, #contact-us .contact-us-form .custom-form-control:active, #contact-us .contact-us-form .custom-texterea-control:hover, #contact-us .contact-us-form .custom-texterea-control:focus, #contact-us .contact-us-form .custom-texterea-control:active {
         box-shadow: none;
-        outline: none;
-        background: #f2f2f7; }
+        outline: none; }
+        #contact-us .contact-us-form .custom-form-control:hover::placeholder, #contact-us .contact-us-form .custom-form-control:focus::placeholder, #contact-us .contact-us-form .custom-form-control:active::placeholder, #contact-us .contact-us-form .custom-texterea-control:hover::placeholder, #contact-us .contact-us-form .custom-texterea-control:focus::placeholder, #contact-us .contact-us-form .custom-texterea-control:active::placeholder {
+          color: #B2B2B2; }
       @media (max-width: 575px) {
         #contact-us .contact-us-form .custom-form-control, #contact-us .contact-us-form .custom-texterea-control {
           padding: 20px; } }
@@ -832,14 +845,9 @@ nav#navBar {
     #contact-us .contact-us-form #cname, #contact-us .contact-us-form #subject, #contact-us .contact-us-form #massage, #contact-us .contact-us-form #cnumber {
       padding-left: 0;
       padding-right: 0;
-      margin: 0;
-      position: relative; }
+      margin: 0; }
       #contact-us .contact-us-form #cname #name-error, #contact-us .contact-us-form #cname #mobile-number-error, #contact-us .contact-us-form #cname #subject-error, #contact-us .contact-us-form #cname #massage-error, #contact-us .contact-us-form #subject #name-error, #contact-us .contact-us-form #subject #mobile-number-error, #contact-us .contact-us-form #subject #subject-error, #contact-us .contact-us-form #subject #massage-error, #contact-us .contact-us-form #massage #name-error, #contact-us .contact-us-form #massage #mobile-number-error, #contact-us .contact-us-form #massage #subject-error, #contact-us .contact-us-form #massage #massage-error, #contact-us .contact-us-form #cnumber #name-error, #contact-us .contact-us-form #cnumber #mobile-number-error, #contact-us .contact-us-form #cnumber #subject-error, #contact-us .contact-us-form #cnumber #massage-error {
-        color: red;
-        z-index: 10;
-        bottom: 2px;
-        position: absolute;
-        margin-bottom: 0; }
+        color: red; }
         @media (max-width: 992px) {
           #contact-us .contact-us-form #cname #name-error, #contact-us .contact-us-form #cname #mobile-number-error, #contact-us .contact-us-form #cname #subject-error, #contact-us .contact-us-form #cname #massage-error, #contact-us .contact-us-form #subject #name-error, #contact-us .contact-us-form #subject #mobile-number-error, #contact-us .contact-us-form #subject #subject-error, #contact-us .contact-us-form #subject #massage-error, #contact-us .contact-us-form #massage #name-error, #contact-us .contact-us-form #massage #mobile-number-error, #contact-us .contact-us-form #massage #subject-error, #contact-us .contact-us-form #massage #massage-error, #contact-us .contact-us-form #cnumber #name-error, #contact-us .contact-us-form #cnumber #mobile-number-error, #contact-us .contact-us-form #cnumber #subject-error, #contact-us .contact-us-form #cnumber #massage-error {
             font-size: 12px; } }
