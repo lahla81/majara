@@ -237,9 +237,9 @@ nav#navBar {
       @media (max-width: 576px) {
         #header .overlay .header .header-paragraph {
           flex: 0 0 100%;
-          width: 100%;
-          margin-left: auto;
-          margin-right: auto; } }
+          padding-left: 0; }
+          #header .overlay .header .header-paragraph .header-play-store {
+            justify-content: space-around; } }
       #header .overlay .header .header-paragraph .page-head-text {
         margin-top: 37px; }
         @media (max-width: 1600px) {
@@ -292,7 +292,7 @@ nav#navBar {
               margin-top: 68px;
               margin-bottom: 27px;
               padding-right: 8px; } }
-          @media (max-width: 575px) {
+          @media (max-width: 575.5px) {
             #header .overlay .header .header-paragraph .page-head-text h4 {
               text-align: center; } }
         #header .overlay .header .header-paragraph .page-head-text h1, #header .overlay .header .header-paragraph .page-head-text h2, #header .overlay .header .header-paragraph .page-head-text h4 {
@@ -332,7 +332,9 @@ nav#navBar {
               margin-bottom: 45px; } }
           @media (max-width: 576px) {
             #header .overlay .header .header-paragraph .page-head-text .play-store {
-              margin-bottom: 20px; } }
+              margin-bottom: 20px;
+              padding-right: 0px;
+              margin-right: 0; } }
         #header .overlay .header .header-paragraph .page-head-text .on-button {
           margin-right: 18px;
           margin-left: 167px; }
