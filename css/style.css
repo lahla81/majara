@@ -199,6 +199,9 @@ nav#navBar {
     @media (max-width: 992px) {
       #header .overlay {
         padding-top: 150px; } }
+    @media (max-width: 576px) {
+      #header .overlay {
+        padding-top: 120px; } }
     #header .overlay .header .photo {
       flex: 0 0 47.6%; }
       #header .overlay .header .photo .mobile-slider {
@@ -217,34 +220,28 @@ nav#navBar {
           width: 70%; }
           #header .overlay .header .photo .mobile-slider img {
             width: 100%; } }
-      @media (max-width: 577px) {
+      @media (max-width: 576px) {
         #header .overlay .header .photo {
-          flex: 0 0 100%; }
+          padding-left: 0; }
           #header .overlay .header .photo .mobile-slider {
-            width: 65%; }
-            #header .overlay .header .photo .mobile-slider img {
-              width: 100%; } }
+            width: 90%; } }
     #header .overlay .header .header-paragraph {
       flex: 0 0 52.4%;
       width: 52.4%; }
       @media (max-width: 1600px) {
         #header .overlay .header .header-paragraph {
           padding-right: 0; } }
-      @media (max-width: 992px) {
-        #header .overlay .header .header-paragraph {
-          flex: 0 0 50%;
-          width: 50%; } }
       @media (max-width: 576px) {
         #header .overlay .header .header-paragraph {
-          flex: 0 0 100%;
-          padding-left: 0; }
-          #header .overlay .header .header-paragraph .header-play-store {
-            justify-content: space-around; } }
+          padding-left: 0; } }
       #header .overlay .header .header-paragraph .page-head-text {
         margin-top: 37px; }
         @media (max-width: 1600px) {
           #header .overlay .header .header-paragraph .page-head-text {
             margin-top: 34px; } }
+        @media (max-width: 471px) {
+          #header .overlay .header .header-paragraph .page-head-text {
+            margin-top: 20px; } }
         #header .overlay .header .header-paragraph .page-head-text h1.majara {
           font-size: 30px;
           line-height: 56px;
@@ -262,6 +259,9 @@ nav#navBar {
               #header .overlay .header .header-paragraph .page-head-text h1.majara span.dash {
                 line-height: 36px;
                 font-size: 24px; } }
+          @media (max-width: 576px) {
+            #header .overlay .header .header-paragraph .page-head-text h1.majara {
+              padding-right: 0; } }
         #header .overlay .header .header-paragraph .page-head-text h2 {
           font-size: 40px;
           line-height: 60px;
@@ -280,6 +280,23 @@ nav#navBar {
             #header .overlay .header .header-paragraph .page-head-text h2 {
               font-size: 27px;
               line-height: 48px; } }
+          @media (max-width: 576px) {
+            #header .overlay .header .header-paragraph .page-head-text h2 {
+              padding-right: 0;
+              font-size: 22px;
+              line-height: 36px; } }
+          @media (max-width: 471px) {
+            #header .overlay .header .header-paragraph .page-head-text h2 {
+              font-size: 20px;
+              line-height: 30px; } }
+          @media (max-width: 375px) {
+            #header .overlay .header .header-paragraph .page-head-text h2 {
+              font-size: 18px;
+              line-height: 26px; } }
+          @media (max-width: 393px) {
+            #header .overlay .header .header-paragraph .page-head-text h2 {
+              font-size: 16px;
+              line-height: 22px; } }
         #header .overlay .header .header-paragraph .page-head-text h4 {
           font-size: 30px;
           line-height: 56px;
@@ -292,9 +309,26 @@ nav#navBar {
               margin-top: 68px;
               margin-bottom: 27px;
               padding-right: 8px; } }
-          @media (max-width: 575.5px) {
+          @media (max-width: 576px) {
             #header .overlay .header .header-paragraph .page-head-text h4 {
-              text-align: center; } }
+              font-size: 20px;
+              margin-top: 40px;
+              margin-bottom: 20px; } }
+          @media (max-width: 471px) {
+            #header .overlay .header .header-paragraph .page-head-text h4 {
+              font-size: 18px;
+              margin-top: 30px;
+              margin-bottom: 24px; } }
+          @media (max-width: 375px) {
+            #header .overlay .header .header-paragraph .page-head-text h4 {
+              font-size: 16px;
+              margin-top: 24px;
+              margin-bottom: 16px; } }
+          @media (max-width: 393px) {
+            #header .overlay .header .header-paragraph .page-head-text h4 {
+              font-size: 14px;
+              margin-top: 20px;
+              margin-bottom: 12px; } }
         #header .overlay .header .header-paragraph .page-head-text h1, #header .overlay .header .header-paragraph .page-head-text h2, #header .overlay .header .header-paragraph .page-head-text h4 {
           color: white; }
         #header .overlay .header .header-paragraph .page-head-text h1, #header .overlay .header .header-paragraph .page-head-text h2 {
@@ -304,6 +338,9 @@ nav#navBar {
               margin-right: 8px; } }
         #header .overlay .header .header-paragraph .page-head-text h2, #header .overlay .header .header-paragraph .page-head-text h4 {
           font-family: NotoKufiArabic-Regular; }
+        @media (max-width: 576px) {
+          #header .overlay .header .header-paragraph .page-head-text .header-play-store {
+            justify-content: space-around; } }
         #header .overlay .header .header-paragraph .page-head-text .play-store {
           width: 226.7px;
           margin-bottom: 117px; }
@@ -314,6 +351,9 @@ nav#navBar {
               box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
           #header .overlay .header .header-paragraph .page-head-text .play-store.google {
             margin-left: 25px; }
+            @media (max-width: 768px) {
+              #header .overlay .header .header-paragraph .page-head-text .play-store.google {
+                margin-left: 0px; } }
           @media (max-width: 1600px) {
             #header .overlay .header .header-paragraph .page-head-text .play-store {
               width: 190px;
@@ -351,15 +391,12 @@ nav#navBar {
               margin-left: auto; } }
           @media (max-width: 576px) {
             #header .overlay .header .header-paragraph .page-head-text .on-button .on-off {
-              margin-bottom: 50px; } }
+              margin-bottom: 30px; }
+              #header .overlay .header .header-paragraph .page-head-text .on-button .on-off img {
+                width: 20px; } }
           @media (max-width: 1250px) {
             #header .overlay .header .header-paragraph .page-head-text .on-button {
               margin-left: 18px; } }
-          @media (max-width: 576px) {
-            #header .overlay .header .header-paragraph .page-head-text .on-button {
-              margin-left: 5px;
-              margin-right: 5px;
-              padding: 20px; } }
           #header .overlay .header .header-paragraph .page-head-text .on-button .group20:active, #header .overlay .header .header-paragraph .page-head-text .on-button .group20:focus, #header .overlay .header .header-paragraph .page-head-text .on-button .group20:hover {
             box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3); }
           #header .overlay .header .header-paragraph .page-head-text .on-button .social {
@@ -384,23 +421,20 @@ nav#navBar {
                 @media (max-width: 768px) {
                   #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.facebook {
                     margin-left: 40px; } }
-                @media (max-width: 576px) {
+                @media (max-width: 400px) {
                   #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.facebook {
-                    margin-left: 60px; } }
+                    margin-left: 20px; } }
               #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a {
                 color: white; }
-                @media (max-width: 575.5px) {
-                  #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a {
-                    color: #2574F2; } }
                 #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fab {
                   font-size: 34px;
                   font-weight: normal; }
                   @media (max-width: 1600px) {
                     #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fab {
                       font-size: 27px; } }
-                  @media (max-width: 576px) {
+                  @media (max-width: 400px) {
                     #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fab {
-                      margin-top: 50px; } }
+                      font-size: 22px; } }
                 #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-instagram:hover, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-instagram:active, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-instagram:focus {
                   color: #e4405f; }
                 #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-facebook-f:hover, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-facebook-f:active, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-facebook-f:focus {
