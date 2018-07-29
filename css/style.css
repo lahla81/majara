@@ -178,6 +178,12 @@ nav#navBar {
     #navBar.noTransparrent .navagation a.navbar-brand img {
       width: 60%;
       float: left; }
+    @media (max-width: 992px) {
+      #navBar.noTransparrent .navagation a.navbar-brand {
+        padding-top: 5px; } }
+    @media (max-width: 552px) {
+      #navBar.noTransparrent .navagation a.navbar-brand img {
+        width: 80%; } }
 
 #header {
   background-image: url(../images/Path11.png), url(../images/bg.png), url(../images/bg1.png);
