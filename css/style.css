@@ -27,33 +27,27 @@ body {
   padding-right: 0; }
 
 nav#navBar {
-  padding: 80px 0 0 0;
-  transition: all 0.5s ease-in; }
+  padding: 0; }
   @media (min-width: 1920px) {
     nav#navBar {
       margin-left: auto;
       margin-right: auto;
       max-width: 1920px; } }
-  @media (max-width: 1600px) {
-    nav#navBar {
-      padding: 67px 0 0 0; } }
-  @media (max-width: 992px) {
-    nav#navBar {
-      padding: 20px 0 0 0; } }
   nav#navBar .navagation {
+    transition: all 1s ease-in;
     background-color: transparent;
     display: -webkit-box;
     display: flex;
     width: 100%;
     justify-content: space-around;
-    padding: 0 151px 0 182px; }
+    padding: 80px 151px 0 182px; }
     @media (max-width: 1600px) {
       nav#navBar .navagation {
-        padding: 0 123px 0 145px;
+        padding: 67px 123px 0 145px;
         justify-content: space-between; } }
     @media (max-width: 1200px) {
       nav#navBar .navagation {
-        padding: 0 60px 0 60px; } }
+        padding: 20px 60px 0 60px; } }
     @media (max-width: 991.5px) {
       nav#navBar .navagation {
         padding-left: 30px;
@@ -171,19 +165,8 @@ nav#navBar {
   background: #2574F2;
   padding: 0; }
   #navBar.noTransparrent .navagation {
-    padding-bottom: 10px;
-    padding-top: 15px; }
-    #navBar.noTransparrent .navagation li {
-      margin-bottom: 0px; }
-    #navBar.noTransparrent .navagation a.navbar-brand img {
-      width: 60%;
-      float: left; }
-    @media (max-width: 992px) {
-      #navBar.noTransparrent .navagation a.navbar-brand {
-        padding-top: 5px; } }
-    @media (max-width: 552px) {
-      #navBar.noTransparrent .navagation a.navbar-brand img {
-        width: 80%; } }
+    padding-bottom: 5px;
+    padding-top: 5px; }
 
 #header {
   background-image: url(../images/Path11.png), url(../images/bg.png), url(../images/bg1.png);
