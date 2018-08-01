@@ -42,7 +42,6 @@ nav#navBar {
       padding: 20px 0 0 0; } }
   nav#navBar .navagation {
     background-color: transparent;
-    display: -webkit-box;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -60,7 +59,7 @@ nav#navBar {
         padding-right: 30px; }
         nav#navBar .navagation #navbarTogglerDemo01 {
           position: absolute;
-          background: #2574F2;
+          background: #3e66e6;
           box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
           margin-top: 70px;
           padding-right: 15px;
@@ -79,9 +78,9 @@ nav#navBar {
         outline: none; }
         nav#navBar .navagation button:hover i.fa, nav#navBar .navagation button:focus i.fa, nav#navBar .navagation button:active i.fa {
           outline: none;
-          color: #2574F2;
+          color: #3e66e6;
           background-color: white;
-          border: 1px solid #2574F2; }
+          border: 1px solid #3e66e6; }
   nav#navBar li {
     margin-bottom: 25px; }
     @media (max-width: 1600px) {
@@ -94,18 +93,20 @@ nav#navBar {
     font-size: 20px;
     line-height: 38px;
     position: relative; }
-    nav#navBar a.nav-link:hover::before, nav#navBar a.nav-link:focus::before, nav#navBar a.nav-link:active::before {
+    nav#navBar a.nav-link:hover:before, nav#navBar a.nav-link:focus:before, nav#navBar a.nav-link:active:before {
       content: "";
       position: absolute;
       width: 48px;
       height: 3px;
       background-color: white;
-      bottom: -8px;
-      right: 15px; }
+      bottom: -8px; }
       @media (max-width: 1600px) {
-        nav#navBar a.nav-link:hover::before, nav#navBar a.nav-link:focus::before, nav#navBar a.nav-link:active::before {
+        nav#navBar a.nav-link:hover:before, nav#navBar a.nav-link:focus:before, nav#navBar a.nav-link:active:before {
           width: 35px;
           height: 2px;
+          bottom: 0; } }
+      @media (max-width: 991px) {
+        nav#navBar a.nav-link:hover:before, nav#navBar a.nav-link:focus:before, nav#navBar a.nav-link:active:before {
           bottom: 0; } }
     @media (max-width: 1600px) {
       nav#navBar a.nav-link {
@@ -119,7 +120,7 @@ nav#navBar {
     padding-left: 25px;
     padding-right: 25px;
     margin-right: 27px; }
-    nav#navBar a.download-link::before {
+    nav#navBar a.download-link:before {
       display: none; }
     nav#navBar a.download-link:hover, nav#navBar a.download-link:focus, nav#navBar a.download-link:active {
       box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
@@ -151,16 +152,15 @@ nav#navBar {
         width: 120px; } }
   nav#navBar a.nav-link.scroll.active {
     background: transparent; }
-    nav#navBar a.nav-link.scroll.active::before {
+    nav#navBar a.nav-link.scroll.active:before {
       content: "";
       position: absolute;
       width: 48px;
       height: 3px;
       background-color: white;
-      bottom: -8px;
-      right: 15px; }
+      bottom: -8px; }
       @media (max-width: 1600px) {
-        nav#navBar a.nav-link.scroll.active::before {
+        nav#navBar a.nav-link.scroll.active:before {
           width: 35px;
           height: 2px;
           bottom: 0; } }
@@ -194,7 +194,7 @@ nav#navBar {
   padding-bottom: 95px; }
   @media (max-width: 992px) {
     #header {
-      background-position: 2% 80%, center center, 0px -50px; } }
+      background-position: 2% 80%, center center, 0px -120px; } }
   #header .overlay {
     padding-top: 224px;
     min-height: 100%;
@@ -615,9 +615,6 @@ nav#navBar {
       padding-bottom: 80px; } }
   #gift .paragraph {
     padding-bottom: 20px;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    -webkit-justify-content: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -770,7 +767,7 @@ nav#navBar {
         transform: translateX(-50%); }
         #fronts #carouselExampleControls .carousel-item .item.main .carousel-title {
           font-size: 30px;
-          color: #1bc5ff;
+          color: #45C1F0;
           line-height: 56px; }
           @media (max-width: 1600px) {
             #fronts #carouselExampleControls .carousel-item .item.main .carousel-title {
@@ -798,14 +795,14 @@ nav#navBar {
             transform: translateX(-53%); } }
     #fronts #carouselExampleControls .controls .carousel-control-prev,
     #fronts #carouselExampleControls .controls .carousel-control-next {
-      border: 2px solid #1bc5ff;
+      border: 2px solid #45C1F0;
       border-radius: 50%;
       height: 70px;
       width: 70px;
       top: 50%; }
       #fronts #carouselExampleControls .controls .carousel-control-prev i.fas,
       #fronts #carouselExampleControls .controls .carousel-control-next i.fas {
-        color: #1bc5ff;
+        color: #45C1F0;
         font-size: 18px;
         font-weight: NotoKufiArabic-Regular; }
       @media (max-width: 1600px) {
@@ -995,7 +992,7 @@ nav#navBar {
     #contact-us .contact-us-form .cnumber {
       border-top-left-radius: 10px; }
     #contact-us .contact-us-form button.submit {
-      background: #1bc5ff;
+      background: #45C1F0;
       font-size: 25px;
       line-height: 47px;
       margin-top: 70px;
