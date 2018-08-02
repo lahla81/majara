@@ -90,7 +90,9 @@ nav#navBar {
         margin-bottom: 25px; } }
     @media (max-width: 991.5px) {
       nav#navBar ul {
-        margin-bottom: 0px; } }
+        margin-bottom: 0px; }
+        nav#navBar ul li {
+          margin-bottom: 10px; } }
   nav#navBar a.nav-link {
     color: white;
     padding: 8px 17px;
@@ -134,7 +136,9 @@ nav#navBar {
       nav#navBar a.download-link {
         margin-right: auto;
         margin-left: auto;
-        width: 100%; } }
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 10px; } }
   nav#navBar a.navbar-brand {
     float: left;
     width: 240px;
