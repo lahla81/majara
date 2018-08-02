@@ -27,7 +27,9 @@ body {
   padding-right: 0; }
 
 nav#navBar {
-  padding: 0; }
+  padding: 0;
+  transition: all 0.1s ease-in;
+  background-color: transparent; }
   @media (min-width: 1920px) {
     nav#navBar {
       margin-left: auto;
@@ -41,7 +43,6 @@ nav#navBar {
       padding: 0; } }
   nav#navBar .navagation {
     transition: all 1s ease-in;
-    background-color: transparent;
     display: -webkit-box;
     display: flex;
     width: 100%;
@@ -90,7 +91,8 @@ nav#navBar {
         margin-bottom: 25px; } }
     @media (max-width: 991.5px) {
       nav#navBar ul {
-        margin-bottom: 0px; }
+        margin-bottom: 10px;
+        margin-top: 10px; }
         nav#navBar ul li {
           margin-bottom: 10px; } }
   nav#navBar a.nav-link {
@@ -137,8 +139,7 @@ nav#navBar {
         margin-right: auto;
         margin-left: auto;
         width: 100%;
-        border-radius: 0;
-        margin-bottom: 10px; } }
+        border-radius: 0; } }
   nav#navBar a.navbar-brand {
     float: left;
     width: 240px;
