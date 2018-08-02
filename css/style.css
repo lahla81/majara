@@ -12,11 +12,11 @@ body {
 
 .container-fluid {
   padding: 0; }
-  @media (min-width: 1920px) {
+  @media (min-width: 2500px) {
     .container-fluid {
       margin-left: auto;
       margin-right: auto;
-      max-width: 1920px; } }
+      max-width: 2500px; } }
 
 .row {
   margin-left: 0;
@@ -28,21 +28,15 @@ body {
 
 nav#navBar {
   padding: 0;
-  transition: all 0.1s ease-in;
+  transition: 0.3s ease all;
   background-color: transparent; }
-  @media (min-width: 1920px) {
+  @media (min-width: 2500px) {
     nav#navBar {
       margin-left: auto;
       margin-right: auto;
-      max-width: 1920px; } }
-  @media (max-width: 1600px) {
-    nav#navBar {
-      padding: 0; } }
-  @media (max-width: 992px) {
-    nav#navBar {
-      padding: 0; } }
+      max-width: 2500px; } }
   nav#navBar .navagation {
-    transition: all 1s ease-in;
+    transition: 1s ease all;
     display: -webkit-box;
     display: flex;
     width: 100%;
@@ -54,7 +48,7 @@ nav#navBar {
         justify-content: space-between; } }
     @media (max-width: 1200px) {
       nav#navBar .navagation {
-        padding: 20px 60px 0 60px; } }
+        padding: 40px 80px 0 80px; } }
     @media (max-width: 991.5px) {
       nav#navBar .navagation {
         padding-left: 30px;
@@ -71,7 +65,7 @@ nav#navBar {
         padding-left: 15px;
         padding-right: 15px; } }
     nav#navBar .navagation button {
-      margin-top: 5px; }
+      padding: 0; }
       nav#navBar .navagation button i.fa {
         color: white;
         padding: 10px;
@@ -152,8 +146,10 @@ nav#navBar {
         width: 188px; } }
     @media (max-width: 992px) {
       nav#navBar a.navbar-brand {
-        width: 180px;
-        padding-top: 15px; } }
+        width: 180px; } }
+    @media (max-width: 768px) {
+      nav#navBar a.navbar-brand {
+        width: 140px; } }
     @media (max-width: 552px) {
       nav#navBar a.navbar-brand {
         width: 120px; } }
@@ -176,13 +172,12 @@ nav#navBar {
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
 
 #navBar.noTransparrent {
-  background: #2574F2;
-  padding: 0; }
+  background: #2574F2; }
   #navBar.noTransparrent .navagation {
     padding-bottom: 5px;
     padding-top: 5px; }
     #navBar.noTransparrent .navagation ul {
-      margin-bottom: 0px; }
+      margin-bottom: 0; }
 
 #header {
   background-image: url(../images/Path11.png), url(../images/bg.png), url(../images/bg1.png);
@@ -684,6 +679,10 @@ nav#navBar {
   padding-top: 137px;
   position: relative;
   background: transparent; }
+  @media (max-width: 992px) {
+    #fronts {
+      padding-bottom: 80px;
+      padding-top: 80px; } }
   #fronts:after {
     content: "";
     background: rgba(27, 197, 255, 0.05);
@@ -1020,7 +1019,7 @@ nav#navBar {
         line-height: 32px;
         padding: 10px 80px;
         border-radius: 34px; } }
-    @media (max-width: 575px) {
+    @media (max-width: 575.5px) {
       #contact-us .contact-us-form .cname {
         border-top-right-radius: 10px;
         border-top-left-radius: 10px; }
