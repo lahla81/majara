@@ -30,7 +30,9 @@ nav#navBar {
   padding: 0;
   -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
-  background-color: transparent; }
+  background: #4265E4;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#4265E4), to(#2972F0));
+  background: linear-gradient(to bottom, #4265E4 0%, transparent 100%); }
   @media (min-width: 2500px) {
     nav#navBar {
       margin-left: auto;
@@ -94,6 +96,7 @@ nav#navBar {
           margin-bottom: 10px; } }
   nav#navBar a.nav-link {
     color: white;
+    background: transparent;
     padding: 8px 17px;
     margin: 0 11px;
     font-size: 20px;
@@ -156,21 +159,19 @@ nav#navBar {
     @media (max-width: 552px) {
       nav#navBar a.navbar-brand {
         width: 120px; } }
-  nav#navBar a.nav-link.scroll.active {
-    background: transparent; }
-    nav#navBar a.nav-link.scroll.active::before {
-      content: "";
-      position: absolute;
-      width: 48px;
-      height: 3px;
-      background-color: white;
-      bottom: -8px;
-      right: 15px; }
-      @media (max-width: 1600px) {
-        nav#navBar a.nav-link.scroll.active::before {
-          width: 35px;
-          height: 2px;
-          bottom: 0; } }
+  nav#navBar a.nav-link.scroll.active::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 3px;
+    background-color: white;
+    bottom: -8px;
+    right: 15px; }
+    @media (max-width: 1600px) {
+      nav#navBar a.nav-link.scroll.active::before {
+        width: 35px;
+        height: 2px;
+        bottom: 0; } }
   nav#navBar a.download-link.scroll.active {
     box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
 
@@ -694,7 +695,6 @@ nav#navBar {
     left: 43%;
     top: 0;
     bottom: 0;
-    content: " ";
     z-index: -1; }
   #fronts .title-sm {
     display: none; }
