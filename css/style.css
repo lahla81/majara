@@ -28,6 +28,7 @@ body {
 
 nav#navBar {
   padding: 0;
+  -webkit-transition: 0.3s ease all;
   transition: 0.3s ease all;
   background-color: transparent; }
   @media (min-width: 2500px) {
@@ -36,6 +37,7 @@ nav#navBar {
       margin-right: auto;
       max-width: 2500px; } }
   nav#navBar .navagation {
+    -webkit-transition: 1s ease all;
     transition: 1s ease all;
     display: -webkit-box;
     display: flex;
@@ -78,6 +80,7 @@ nav#navBar {
           background-color: white;
           border: 1px solid #2574F2; }
   nav#navBar ul {
+    -webkit-transition: 1s ease all;
     transition: 1s ease all;
     margin-bottom: 35px; }
     @media (max-width: 1600px) {
@@ -442,78 +445,78 @@ nav#navBar {
                 #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-twitter:hover, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-twitter:active, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-twitter:focus {
                   color: #55acee; }
 
-#about {
+#brief {
   padding: 185px 10px 215px; }
   @media (max-width: 1600px) {
-    #about {
+    #brief {
       padding: 140px 115px; } }
   @media (max-width: 1200px) {
-    #about {
+    #brief {
       padding: 100px 75px; } }
   @media (max-width: 992px) {
-    #about {
+    #brief {
       padding: 85px 50px; } }
   @media (max-width: 768px) {
-    #about {
+    #brief {
       padding: 30px; } }
   @media (max-width: 666px) {
-    #about {
+    #brief {
       padding: 20px; } }
-  #about .paragraph {
+  #brief .paragraph {
     padding-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 60px;
     padding-left: 0; }
-    #about .paragraph .about-logo {
+    #brief .paragraph .about-logo {
       width: 119.6px; }
-      #about .paragraph .about-logo img {
+      #brief .paragraph .about-logo img {
         width: 100%; }
     @media (max-width: 1600px) {
-      #about .paragraph .about-logo {
+      #brief .paragraph .about-logo {
         width: 94px; } }
     @media (max-width: 1320px) {
-      #about .paragraph {
+      #brief .paragraph {
         padding-right: 15px; } }
-    #about .paragraph p {
+    #brief .paragraph p {
       padding-top: 25px;
       font-size: 35px;
       line-height: 51px;
       font-family: NotoKufiArabic-Regular;
       color: #41434F; }
       @media (max-width: 1600px) {
-        #about .paragraph p {
+        #brief .paragraph p {
           padding-top: 23px;
           font-size: 28px;
           line-height: 40px; } }
       @media (max-width: 1240px) {
-        #about .paragraph p {
+        #brief .paragraph p {
           font-size: 24px; } }
       @media (max-width: 1070px) {
-        #about .paragraph p {
+        #brief .paragraph p {
           font-size: 22px; } }
       @media (max-width: 992px) {
-        #about .paragraph p {
+        #brief .paragraph p {
           font-size: 16px; } }
       @media (max-width: 576px) {
-        #about .paragraph p {
+        #brief .paragraph p {
           font-size: 20px; } }
-  #about .photo {
+  #brief .photo {
     padding-right: 155px;
     padding-left: 70px; }
-    #about .photo img {
+    #brief .photo img {
       width: 100%; }
     @media (max-width: 1260px) {
-      #about .photo {
+      #brief .photo {
         padding-right: 90px;
         padding-left: 40px; } }
     @media (max-width: 992px) {
-      #about .photo {
+      #brief .photo {
         padding-right: 50px;
         padding-left: 50px; } }
     @media (max-width: 768px) {
-      #about .photo {
+      #brief .photo {
         padding-right: 20px;
         padding-left: 20px; } }
 
