@@ -8,7 +8,8 @@
 
 body {
   font-family: 'NotoKufiArabic-Bold' ,  'Times New Roman', Times, serif;
-  background: rgba(0, 0, 0, 0.02); }
+  background: rgba(0, 0, 0, 0.02);
+  position: relative; }
 
 .container-fluid {
   padding: 0; }
@@ -29,10 +30,8 @@ body {
 nav#navBar {
   padding: 0;
   -webkit-transition: 0.3s ease all;
-  transition: 0.3s ease all;
-  background: #4265E4;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#4265E4), to(#2972F0));
-  background: linear-gradient(to bottom, #4265E4 0%, transparent 100%); }
+  transition: 1s ease all;
+  background: transparent; }
   @media (min-width: 2500px) {
     nav#navBar {
       margin-left: auto;
@@ -48,7 +47,7 @@ nav#navBar {
     padding: 80px 151px 0 182px; }
     @media (max-width: 1600px) {
       nav#navBar .navagation {
-        padding: 67px 123px 0 145px;
+        padding: 40px 123px 0 145px;
         justify-content: space-between; } }
     @media (max-width: 1200px) {
       nav#navBar .navagation {
@@ -173,7 +172,8 @@ nav#navBar {
         height: 2px;
         bottom: 0; } }
   nav#navBar a.download-link.scroll.active {
-    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3);
+    background: #2574F2; }
 
 #navBar.noTransparrent {
   background: #2574F2; }
