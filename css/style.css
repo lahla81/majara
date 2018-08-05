@@ -139,7 +139,6 @@ nav#navBar {
         width: 100%;
         border-radius: 0; } }
   nav#navBar a.navbar-brand {
-    transition: 1s ease all;
     float: left;
     width: 240px;
     padding: 0;
