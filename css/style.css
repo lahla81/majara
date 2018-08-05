@@ -29,8 +29,7 @@ body {
 
 nav#navBar {
   padding: 0;
-  -webkit-transition: 0.3s ease all;
-  transition: 1s ease all;
+  -webkit-transition: 0.1s ease padding;
   background: transparent; }
   @media (min-width: 2500px) {
     nav#navBar {
@@ -47,7 +46,7 @@ nav#navBar {
     padding: 80px 151px 0 182px; }
     @media (max-width: 1600px) {
       nav#navBar .navagation {
-        padding: 40px 123px 0 145px;
+        padding: 67px 123px 0 145px;
         justify-content: space-between; } }
     @media (max-width: 1200px) {
       nav#navBar .navagation {
@@ -140,6 +139,7 @@ nav#navBar {
         width: 100%;
         border-radius: 0; } }
   nav#navBar a.navbar-brand {
+    transition: 1s ease all;
     float: left;
     width: 240px;
     padding: 0;
