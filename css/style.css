@@ -9,7 +9,8 @@
 body {
   font-family: 'NotoKufiArabic-Bold' ,  'Times New Roman', Times, serif;
   background: rgba(0, 0, 0, 0.02);
-  position: relative; }
+  position: relative;
+  -webkit-transition: 2s ease-in all; }
 
 .container-fluid {
   padding: 0; }
@@ -28,8 +29,10 @@ body {
   padding-right: 0; }
 
 nav#navBar {
+  overflow: hidden;
   padding: 0;
-  -webkit-transition: 0.1s ease padding;
+  -webkit-transition: .2s ease all;
+  transition: 1s ease all;
   background: transparent; }
   @media (min-width: 2500px) {
     nav#navBar {
@@ -175,7 +178,7 @@ nav#navBar {
     background: #2574F2; }
 
 #navBar.noTransparrent {
-  background: #2574F2; }
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#4265E4), to(#2972F0)); }
   #navBar.noTransparrent .navagation {
     padding-bottom: 5px;
     padding-top: 5px; }
@@ -183,11 +186,8 @@ nav#navBar {
       margin-bottom: 0; }
 
 #header {
-  background-image: url(../images/Path11.png), url(../images/bg.png), url(../images/bg1.png);
-  background-position: 0.2% 90%, center center, 344px -72px;
-  background-size: 43%, cover, cover;
-  background-repeat: no-repeat, no-repeat,no-repeat;
-  min-height: 100%;
+  height: 600px;
+  background: #e4405f;
   padding-bottom: 95px; }
   @media (max-width: 992px) {
     #header {
@@ -446,7 +446,8 @@ nav#navBar {
                   color: #55acee; }
 
 #brief {
-  padding: 185px 10px 215px; }
+  padding: 185px 10px 215px;
+  background: #e4405f; }
   @media (max-width: 1600px) {
     #brief {
       padding: 140px 115px; } }
