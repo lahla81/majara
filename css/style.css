@@ -27,6 +27,8 @@ body {
   padding-right: 0; }
 
 nav#navBar {
+  overflow: visible;
+  z-index: 100;
   padding: 0;
   -webkit-transition: .2s ease all;
   transition: 1s ease all;
@@ -677,7 +679,7 @@ nav#navBar {
           width: 80%; } }
 
 #fronts {
-  background: transparent; }
+  overflow: hidden; }
   #fronts .title-sm {
     display: none; }
     @media (max-width: 576px) {
@@ -690,6 +692,7 @@ nav#navBar {
           color: #467dc0;
           margin-bottom: 25px; } }
   #fronts .fronts-row {
+    background: transparent;
     position: relative;
     padding-bottom: 137px;
     padding-top: 137px; }
@@ -710,6 +713,7 @@ nav#navBar {
     position: absolute;
     left: 19%;
     bottom: 52%;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     color: #467dc0;
     font-size: 40px;
@@ -768,6 +772,7 @@ nav#navBar {
         position: absolute;
         top: 51%;
         left: 18%;
+        -webkit-transform: translateX(-50%);
         transform: translateX(-50%); }
         #fronts #carouselExampleControls .carousel-item .item.main .carousel-title {
           font-size: 30px;
@@ -914,7 +919,8 @@ nav#navBar {
   background-image: url(../images/MaskGroup21.png);
   background-size: cover;
   background-position: center top;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow: hidden; }
   @media (max-width: 1600px) {
     #contact-us {
       padding-top: 80px;
