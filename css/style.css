@@ -1,10 +1,49 @@
+@charset "UTF-8";
 @font-face {
   font-family: NotoKufiArabic-Regular;
-  src: url(../webfonts/NotoKufiArabic-Regular.ttf); }
+  src: url(../fonts/NotoKufiArabic-Regular.ttf); }
 
 @font-face {
   font-family: NotoKufiArabic-Bold;
-  src: url(../webfonts/NotoKufiArabic-Bold.ttf); }
+  src: url(../fonts/NotoKufiArabic-Bold.ttf); }
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?mfuka2");
+  src: url("../fonts/icomoon.eot?mfuka2#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?mfuka2") format("truetype"), url("../fonts/icomoon.woff?mfuka2") format("woff"), url("../fonts/icomoon.svg?mfuka2#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-menu:before {
+  content: ""; }
+
+.icon-arrow-right2:before {
+  content: ""; }
+
+.icon-arrow-left2:before {
+  content: ""; }
+
+.icon-facebook:before {
+  content: ""; }
+
+.icon-instagram:before {
+  content: ""; }
+
+.icon-twitter:before {
+  content: ""; }
 
 body {
   font-family: 'NotoKufiArabic-Bold' ,  'Times New Roman', Times, serif;
@@ -27,6 +66,7 @@ body {
   padding-right: 0; }
 
 nav#navBar {
+  opacity: 1;
   overflow: visible;
   z-index: 100;
   padding: 0;
@@ -57,27 +97,30 @@ nav#navBar {
     @media (max-width: 991.5px) {
       nav#navBar .navagation {
         padding-left: 30px;
-        padding-right: 30px; }
+        padding-right: 30px;
+        position: relative; }
         nav#navBar .navagation #navbarTogglerDemo01 {
           position: absolute;
           background: #2574F2;
           box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.3);
           margin-top: 70px;
           padding-right: 15px;
-          padding-left: 15px; } }
+          padding-left: 15px;
+          z-index: 105; } }
     @media (max-width: 552px) {
       nav#navBar .navagation {
         padding-left: 15px;
         padding-right: 15px; } }
     nav#navBar .navagation button {
       padding: 0; }
-      nav#navBar .navagation button i.fa {
+      nav#navBar .navagation button i.icon-menu {
         color: white;
-        padding: 10px;
-        border: 1px solid white; }
+        padding: 7px 10px;
+        border: 1px solid white;
+        font-size: 30px; }
       nav#navBar .navagation button:hover, nav#navBar .navagation button:focus, nav#navBar .navagation button:active {
         outline: none; }
-        nav#navBar .navagation button:hover i.fa, nav#navBar .navagation button:focus i.fa, nav#navBar .navagation button:active i.fa {
+        nav#navBar .navagation button:hover i.icon-menu, nav#navBar .navagation button:focus i.icon-menu, nav#navBar .navagation button:active i.icon-menu {
           outline: none;
           color: #2574F2;
           background-color: white;
@@ -102,7 +145,8 @@ nav#navBar {
     margin: 0 11px;
     font-size: 20px;
     line-height: 38px;
-    position: relative; }
+    position: relative;
+    z-index: 105; }
     nav#navBar a.nav-link:hover::before, nav#navBar a.nav-link:focus::before, nav#navBar a.nav-link:active::before {
       content: "";
       position: absolute;
@@ -110,7 +154,8 @@ nav#navBar {
       height: 3px;
       background-color: white;
       bottom: -8px;
-      right: 15px; }
+      right: 15px;
+      z-index: 105; }
       @media (max-width: 1600px) {
         nav#navBar a.nav-link:hover::before, nav#navBar a.nav-link:focus::before, nav#navBar a.nav-link:active::before {
           width: 35px;
@@ -167,7 +212,8 @@ nav#navBar {
     height: 3px;
     background-color: white;
     bottom: -8px;
-    right: 15px; }
+    right: 15px;
+    z-index: 105; }
     @media (max-width: 1600px) {
       nav#navBar a.nav-link.scroll.active::before {
         width: 35px;
@@ -379,72 +425,78 @@ nav#navBar {
               margin-bottom: 20px;
               padding-right: 0px;
               margin-right: 0; } }
-        #header .overlay .header .header-paragraph .page-head-text .on-button {
-          margin-right: 18px;
-          margin-left: 167px; }
-          @media (max-width: 1600px) {
-            #header .overlay .header .header-paragraph .page-head-text .on-button {
-              padding-right: 8px;
-              margin-left: 92px; }
-              #header .overlay .header .header-paragraph .page-head-text .on-button .on-off img {
-                width: 25px; } }
-          @media (max-width: 600px) {
-            #header .overlay .header .header-paragraph .page-head-text .on-button .on-off {
-              width: 100%;
-              margin-right: auto;
-              margin-left: auto; } }
-          @media (max-width: 576px) {
-            #header .overlay .header .header-paragraph .page-head-text .on-button .on-off {
-              margin-bottom: 30px; }
-              #header .overlay .header .header-paragraph .page-head-text .on-button .on-off img {
-                width: 20px; } }
-          @media (max-width: 1250px) {
-            #header .overlay .header .header-paragraph .page-head-text .on-button {
-              margin-left: 18px; } }
-          #header .overlay .header .header-paragraph .page-head-text .on-button .group20:active, #header .overlay .header .header-paragraph .page-head-text .on-button .group20:focus, #header .overlay .header .header-paragraph .page-head-text .on-button .group20:hover {
-            box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3); }
-          #header .overlay .header .header-paragraph .page-head-text .on-button .social {
+      #header .overlay .header .header-paragraph .on-button {
+        margin-right: 18px;
+        margin-left: 167px; }
+        @media (max-width: 1600px) {
+          #header .overlay .header .header-paragraph .on-button {
+            padding-right: 8px;
+            margin-left: 92px; }
+            #header .overlay .header .header-paragraph .on-button .on-off img {
+              width: 25px; } }
+        @media (max-width: 1250px) {
+          #header .overlay .header .header-paragraph .on-button {
+            margin-left: 18px; } }
+        @media (max-width: 552px) {
+          #header .overlay .header .header-paragraph .on-button {
+            margin-left: 0;
+            margin-right: 0;
+            padding-right: 0; } }
+        @media (max-width: 600px) {
+          #header .overlay .header .header-paragraph .on-button .on-off {
+            width: 100%;
             margin-right: auto;
-            margin-top: 20px; }
-            @media (max-width: 1600px) {
-              #header .overlay .header .header-paragraph .page-head-text .on-button .social {
-                margin-top: 18px; } }
-            @media (max-width: 600px) {
-              #header .overlay .header .header-paragraph .page-head-text .on-button .social {
-                margin-left: auto; } }
-            #header .overlay .header .header-paragraph .page-head-text .on-button .social ul {
-              margin-bottom: 0; }
-              #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.facebook {
-                margin-left: 80px; }
+            margin-left: auto; } }
+        @media (max-width: 576px) {
+          #header .overlay .header .header-paragraph .on-button .on-off {
+            margin-bottom: 30px; }
+            #header .overlay .header .header-paragraph .on-button .on-off img {
+              width: 20px; } }
+        #header .overlay .header .header-paragraph .on-button .group20:active, #header .overlay .header .header-paragraph .on-button .group20:focus, #header .overlay .header .header-paragraph .on-button .group20:hover {
+          box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3); }
+        #header .overlay .header .header-paragraph .on-button .social {
+          margin-right: auto;
+          margin-top: 20px; }
+          @media (max-width: 1600px) {
+            #header .overlay .header .header-paragraph .on-button .social {
+              margin-top: 18px; } }
+          @media (max-width: 600px) {
+            #header .overlay .header .header-paragraph .on-button .social {
+              margin-left: auto; } }
+          #header .overlay .header .header-paragraph .on-button .social ul {
+            margin-bottom: 0; }
+            #header .overlay .header .header-paragraph .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .on-button .social ul li.facebook {
+              margin-left: 80px; }
+              @media (max-width: 1600px) {
+                #header .overlay .header .header-paragraph .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .on-button .social ul li.facebook {
+                  margin-left: 62px; } }
+              @media (max-width: 992px) {
+                #header .overlay .header .header-paragraph .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .on-button .social ul li.facebook {
+                  margin-left: 50px; } }
+              @media (max-width: 768px) {
+                #header .overlay .header .header-paragraph .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .on-button .social ul li.facebook {
+                  margin-left: 40px; } }
+              @media (max-width: 420px) {
+                #header .overlay .header .header-paragraph .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .on-button .social ul li.facebook {
+                  margin-left: 20px; } }
+            #header .overlay .header .header-paragraph .on-button .social ul li a {
+              color: white;
+              text-decoration: none; }
+              #header .overlay .header .header-paragraph .on-button .social ul li a i.icon {
+                font-size: 30px;
+                font-weight: normal; }
                 @media (max-width: 1600px) {
-                  #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.facebook {
-                    margin-left: 62px; } }
-                @media (max-width: 992px) {
-                  #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.facebook {
-                    margin-left: 50px; } }
-                @media (max-width: 768px) {
-                  #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.facebook {
-                    margin-left: 40px; } }
+                  #header .overlay .header .header-paragraph .on-button .social ul li a i.icon {
+                    font-size: 24px; } }
                 @media (max-width: 400px) {
-                  #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li.facebook {
-                    margin-left: 20px; } }
-              #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a {
-                color: white; }
-                #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fab {
-                  font-size: 34px;
-                  font-weight: normal; }
-                  @media (max-width: 1600px) {
-                    #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fab {
-                      font-size: 27px; } }
-                  @media (max-width: 400px) {
-                    #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fab {
-                      font-size: 22px; } }
-                #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-instagram:hover, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-instagram:active, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-instagram:focus {
-                  color: #e4405f; }
-                #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-facebook-f:hover, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-facebook-f:active, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-facebook-f:focus {
-                  color: #3b5999; }
-                #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-twitter:hover, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-twitter:active, #header .overlay .header .header-paragraph .page-head-text .on-button .social ul li a i.fa-twitter:focus {
-                  color: #55acee; }
+                  #header .overlay .header .header-paragraph .on-button .social ul li a i.icon {
+                    font-size: 18px; } }
+              #header .overlay .header .header-paragraph .on-button .social ul li a i.icon-instagram:hover, #header .overlay .header .header-paragraph .on-button .social ul li a i.icon-instagram:active, #header .overlay .header .header-paragraph .on-button .social ul li a i.icon-instagram:focus {
+                color: #e4405f; }
+              #header .overlay .header .header-paragraph .on-button .social ul li a i.icon-facebook:hover, #header .overlay .header .header-paragraph .on-button .social ul li a i.icon-facebook:active, #header .overlay .header .header-paragraph .on-button .social ul li a i.icon-facebook:focus {
+                color: #3b5999; }
+              #header .overlay .header .header-paragraph .on-button .social ul li a i.icon-twitter:hover, #header .overlay .header .header-paragraph .on-button .social ul li a i.icon-twitter:active, #header .overlay .header .header-paragraph .on-button .social ul li a i.icon-twitter:focus {
+                color: #55acee; }
 
 #brief {
   padding: 185px 10px 215px; }
@@ -464,7 +516,6 @@ nav#navBar {
     #brief {
       padding: 20px; } }
   #brief .paragraph {
-    padding-top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -502,7 +553,8 @@ nav#navBar {
           font-size: 16px; } }
       @media (max-width: 576px) {
         #brief .paragraph p {
-          font-size: 20px; } }
+          font-size: 20px;
+          margin-bottom: 25px; } }
   #brief .photo {
     padding-right: 155px;
     padding-left: 70px; }
@@ -612,10 +664,6 @@ nav#navBar {
       padding-top: 80px;
       padding-bottom: 80px; } }
   #gift .paragraph {
-    padding-bottom: 20px;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    -webkit-justify-content: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -629,7 +677,8 @@ nav#navBar {
         padding-left: 10px; } }
     @media (max-width: 552px) {
       #gift .paragraph {
-        padding-right: 15px; } }
+        padding-right: 15px;
+        padding-bottom: 20px; } }
     #gift .paragraph h1 {
       color: #2574F2;
       font-size: 40px;
@@ -692,10 +741,12 @@ nav#navBar {
           color: #467dc0;
           margin-bottom: 25px; } }
   #fronts .fronts-row {
+    overflow: hidden;
     background: transparent;
     position: relative;
     padding-bottom: 137px;
-    padding-top: 137px; }
+    padding-top: 137px;
+    z-index: 10; }
     @media (max-width: 992px) {
       #fronts .fronts-row {
         padding-bottom: 80px;
@@ -708,7 +759,7 @@ nav#navBar {
       left: 43%;
       top: 0;
       bottom: 0;
-      z-index: -1; }
+      z-index: 5; }
   #fronts h2 {
     position: absolute;
     left: 19%;
@@ -717,7 +768,8 @@ nav#navBar {
     transform: translateX(-50%);
     color: #467dc0;
     font-size: 40px;
-    line-height: 76px; }
+    line-height: 76px;
+    z-index: 20; }
     @media (max-width: 1600px) {
       #fronts h2 {
         font-size: 30px;
@@ -773,7 +825,8 @@ nav#navBar {
         top: 51%;
         left: 18%;
         -webkit-transform: translateX(-50%);
-        transform: translateX(-50%); }
+        transform: translateX(-50%);
+        z-index: 20; }
         #fronts #carouselExampleControls .carousel-item .item.main .carousel-title {
           font-size: 30px;
           color: #1bc5ff;
@@ -808,12 +861,19 @@ nav#navBar {
       border-radius: 50%;
       height: 70px;
       width: 70px;
-      top: 50%; }
-      #fronts #carouselExampleControls .controls .carousel-control-prev i.fas,
-      #fronts #carouselExampleControls .controls .carousel-control-next i.fas {
+      top: 50%;
+      display: block;
+      text-decoration: none; }
+      #fronts #carouselExampleControls .controls .carousel-control-prev i.icon,
+      #fronts #carouselExampleControls .controls .carousel-control-next i.icon {
         color: #1bc5ff;
         font-size: 18px;
-        font-weight: NotoKufiArabic-Regular; }
+        font-weight: NotoKufiArabic-Regular;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        -webkit-transform: translate(50%, -50%);
+        transform: translate(50%, -50%); }
       @media (max-width: 1600px) {
         #fronts #carouselExampleControls .controls .carousel-control-prev,
         #fronts #carouselExampleControls .controls .carousel-control-next {
@@ -831,6 +891,7 @@ nav#navBar {
           width: 35px; } }
     #fronts #carouselExampleControls .controls .carousel-control-prev {
       left: 12%;
+      -webkit-transform: translateX(-50%);
       transform: translateX(-50%); }
       @media (max-width: 1200px) {
         #fronts #carouselExampleControls .controls .carousel-control-prev {
@@ -840,6 +901,7 @@ nav#navBar {
           left: 8%; } }
     #fronts #carouselExampleControls .controls .carousel-control-next {
       right: 74%;
+      -webkit-transform: translateX(50%);
       transform: translateX(50%); }
       @media (max-width: 1200px) {
         #fronts #carouselExampleControls .controls .carousel-control-next {
@@ -938,7 +1000,9 @@ nav#navBar {
         margin-bottom: 24px; } }
   #contact-us .social {
     margin-bottom: 61px; }
-    #contact-us .social i.fab {
+    #contact-us .social a {
+      text-decoration: none; }
+    #contact-us .social i.icon {
       font-size: 24px;
       color: white;
       margin-left: 25px;
@@ -946,22 +1010,23 @@ nav#navBar {
     @media (max-width: 1600px) {
       #contact-us .social {
         margin-bottom: 20px; }
-        #contact-us .social i.fab {
+        #contact-us .social i.icon {
           font-size: 20px;
           margin-left: 14px;
           margin-right: 14px; } }
-    #contact-us .social i.fa-instagram:hover, #contact-us .social i.fa-instagram:active, #contact-us .social i.fa-instagram:focus {
+    #contact-us .social i.icon-instagram:hover, #contact-us .social i.icon-instagram:active, #contact-us .social i.icon-instagram:focus {
       color: #e4405f; }
-    #contact-us .social i.fa-facebook-f:hover, #contact-us .social i.fa-facebook-f:active, #contact-us .social i.fa-facebook-f:focus {
+    #contact-us .social i.icon-facebook:hover, #contact-us .social i.icon-facebook:active, #contact-us .social i.icon-facebook:focus {
       color: #3b5999; }
-    #contact-us .social i.fa-twitter:hover, #contact-us .social i.fa-twitter:active, #contact-us .social i.fa-twitter:focus {
+    #contact-us .social i.icon-twitter:hover, #contact-us .social i.icon-twitter:active, #contact-us .social i.icon-twitter:focus {
       color: #55acee; }
   #contact-us .contact-us-form {
     width: 50%;
     margin-left: auto;
     margin-right: auto; }
-    #contact-us .contact-us-form .custom-form-row {
-      box-shadow: 0 20px 40px 0 rgba(48, 55, 62, 0.3); }
+    #contact-us .contact-us-form .custom-inputs {
+      box-shadow: 0 20px 40px 0 rgba(48, 55, 62, 0.3);
+      border-radius: 10px; }
     #contact-us .contact-us-form .name-no {
       width: 100%; }
     #contact-us .contact-us-form .custom-form-group {
