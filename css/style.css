@@ -427,7 +427,9 @@ nav#navBar {
               margin-right: 0; } }
       #header .overlay .header .header-paragraph .on-button {
         margin-right: 18px;
-        margin-left: 167px; }
+        margin-left: 167px;
+        position: relative;
+        z-index: 20; }
         @media (max-width: 1600px) {
           #header .overlay .header .header-paragraph .on-button {
             padding-right: 8px;
@@ -456,13 +458,17 @@ nav#navBar {
           box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3); }
         #header .overlay .header .header-paragraph .on-button .social {
           margin-right: auto;
-          margin-top: 20px; }
+          margin-top: 20px;
+          position: absolute;
+          left: 0;
+          z-index: 30; }
           @media (max-width: 1600px) {
             #header .overlay .header .header-paragraph .on-button .social {
               margin-top: 18px; } }
           @media (max-width: 600px) {
             #header .overlay .header .header-paragraph .on-button .social {
-              margin-left: auto; } }
+              margin-left: auto;
+              position: unset; } }
           #header .overlay .header .header-paragraph .on-button .social ul {
             margin-bottom: 0; }
             #header .overlay .header .header-paragraph .on-button .social ul li.instagram, #header .overlay .header .header-paragraph .on-button .social ul li.facebook {
